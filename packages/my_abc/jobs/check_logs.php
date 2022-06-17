@@ -46,7 +46,7 @@
         $mail->getBodyHTML();
         // $mail->to('rdm@abcparts.be');
         $mail->to('rdm@abcparts.be, ch@abcparts.be');
-        $mail->from('info@abcparts.be');
+        $mail->from('offer@abcparts.be');
 
         $mail->sendMail();
       }

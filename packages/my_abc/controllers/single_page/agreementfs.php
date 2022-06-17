@@ -7,7 +7,6 @@ use Concrete\Core\Express\EntryList;
 use Localization;
 use Core;
 use Loader;
-use Express;
 
 
   class PDF extends \FPDF{
@@ -29,18 +28,14 @@ use Express;
 
       $this->setLang($lang);
 
-      // if($_GET['date']){
-      //   $date = $_GET['date'];
-      //   $year = date('Y', strtotime($_GET['date']));
-      // }else{
-      //   $date = date('d/m/Y');
-      //   $year = date('Y');
-      // }
-      $date = date('d/m/Y');
-      $year = date('Y');
-      // echo '<pre>';
-      // print_r($year);
-      // exit;
+      if($_GET['date']){
+        $date = $_GET['date'];
+        $year = date('Y', strtotime($_GET['date']));
+      }else{
+        $date = date('d/m/Y');
+        $year = date('Y');
+      }
+
       $linkReview = $this->review($date);
 
       $this->set('datum', $date);
@@ -64,9 +59,6 @@ use Express;
       // }
 
       $prices = $this->getPricesForYear($year);
-      // echo '<pre>';
-      // print_r($prices);
-      // exit;
       foreach($prices as $price){
         $dagtarief = $price->getDayPrice();
         $nachttarief = $price->getNightPrice();
@@ -123,7 +115,6 @@ use Express;
       $mailService = Core::make('mail');
       $datum = $_GET['date'];
       $year = date('Y', strtotime($_GET['date']));
-      $year = date('Y');
 
       $this->set('signed', 'signed');
       $linkConfirm = 'https://my.abcparts.be/application/files/agreements/agreementfs-' . str_replace(array('/', ' ', '-', '+', ','), '', $_POST['compName']) . '-' . str_replace('/', '', $datum) . '.pdf';
@@ -304,7 +295,7 @@ use Express;
 
       $mailService->setBodyHTML($bodyHeader . $bodyContent . $bodyFooter);
       $mailService->setSubject(t('Bevestiging interventievoorwaarden ') . $year . '!');
-      $mailService->from('info@abcparts.be', 'ABC parts Offer');
+      $mailService->from('offer@abcparts.be', 'ABC parts Offer');
       $mailService->to($_POST['email']);
       // $mailService->bcc('abccontrolemail@gmail.com');
       $mailService->cc('info@abcparts.be');
@@ -314,10 +305,7 @@ use Express;
     }
 
     public function getPricesForYear($year){
-      $year = date('Y');
-      // echo $year;
-      // exit;
-      $entity = Express::getObjectByHandle('price');
+      $entity = \Express::getObjectByHandle('price');
       $entryList = new EntryList($entity);
       $entryList->filterByYear($year);
       $entries = $entryList->getResults();
@@ -330,9 +318,7 @@ use Express;
 
         $entryList->filterByYear($lastYear);
       }
-      // echo '<pre>';
-      // print_r($entries);
-      // exit;
+
       return $entries;
     }
 
@@ -374,8 +360,8 @@ use Express;
       $db = \Database::connection();
 
       $this->setLang($data['lang']);
-      $datum = date('d/m/Y');
-      $year = date('Y');
+      $datum = $data['date'];
+      $year = $data['year'];
       $h = 6;
 
         $compName = $data['compName'];

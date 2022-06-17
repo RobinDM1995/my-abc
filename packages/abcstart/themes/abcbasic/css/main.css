@@ -2241,7 +2241,7 @@ a:focus {
   margin-top: 10px;
   color: black !important;
 }
-.btn-abc-custom {
+.btn-abc-custom{
   background-color: #8bb23b;
   border-color: #8bb23b;
   margin-top: 10px;
@@ -5023,6 +5023,10 @@ table.text-center th {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
+}
+
+#analyse-de-defaut-286{
+  min-height: 150px;
 }
 
 .sem-legend {

@@ -1,10 +1,10 @@
-@charset utf-8; 
+@charset utf-8;
 .formidable .formidable_message.success { color: #3c763d; }
 .formidable .formidable_message.info { color: #31708f; }
 .formidable .formidable_message.warning { color: #8a6d3b; }
 .formidable .formidable_message.error {color: #a94442;}
 
-.formidable .formidable_row, .formidable .formidable_row .element { clear:both; overflow: hidden; }
+.formidable .formidable_row, .formidable .formidable_row .element { clear:both;}
 .formidable .hide { display:none; }
 .formidable .formidable_column { float:left; padding-top: 10px; padding-bottom: 10px;}
 
@@ -210,8 +210,8 @@
 .formidable .file_upload .dz-preview .dz-progress { opacity: 1; z-index: 1000; pointer-events: none; position: absolute; height: 16px; left: 50%; top: 50%; margin-top: -8px; width: 80px; margin-left: -40px; background: rgba(255, 255, 255, 0.9); -webkit-transform: scale(1); border-radius: 8px; overflow: hidden; }
 .formidable .file_upload .dz-preview .dz-progress .dz-upload { background: #333; background: linear-gradient(to bottom, #666, #444); position: absolute; top: 0; left: 0; bottom: 0; width: 0; -webkit-transition: width 300ms ease-in-out; -moz-transition: width 300ms ease-in-out; -ms-transition: width 300ms ease-in-out; -o-transition: width 300ms ease-in-out; transition: width 300ms ease-in-out; }
 
-.formidable .file_upload .dz-preview.dz-error .dz-error-message { width: 120px; display: block; }   
-.formidable .file_upload .dz-preview.dz-error .dz-image, .formidable .file_upload .dz-preview.dz-error .dz-details, .formidable .file_upload .dz-preview.dz-error .dz-progress, .formidable .file_upload .dz-preview.dz-error .dz-error-mark, .formidable .file_upload .dz-preview.dz-error .dz-remove { display: none; } 
+.formidable .file_upload .dz-preview.dz-error .dz-error-message { width: 120px; display: block; }
+.formidable .file_upload .dz-preview.dz-error .dz-image, .formidable .file_upload .dz-preview.dz-error .dz-details, .formidable .file_upload .dz-preview.dz-error .dz-progress, .formidable .file_upload .dz-preview.dz-error .dz-error-mark, .formidable .file_upload .dz-preview.dz-error .dz-remove { display: none; }
 
 .formidable .slider { display: block; vertical-align: middle; position: relative }
 .formidable .slider.slider-horizontal { margin-top: 9px; width: 100%; height: 20px; }
@@ -285,7 +285,7 @@
 .formidable .rating-lg{font-size:3em}
 .formidable .rating-md{font-size:2.5em}
 .formidable .rating-sm{font-size:2em}
-.formidable .rating-xs{font-size:1.5em}    
+.formidable .rating-xs{font-size:1.5em}
 .formidable .rating-container .clear-rating{color:#aaa;cursor:not-allowed;display:inline-block;vertical-align:middle;font-size:60%;padding-right:5px}
 .formidable .clear-rating-active{cursor:pointer!important}
 .formidable .clear-rating-active:hover{color:#843534}

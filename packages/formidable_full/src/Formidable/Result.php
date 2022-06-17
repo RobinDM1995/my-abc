@@ -101,6 +101,10 @@ class Result extends Formidable {
 
 	private function saveAnswers($answers){
 		$db = Database::connection();
+		$_SESSION['answers'] = $answers;
+		// echo '<pre>';
+		// print_r($answers);
+		// exit;
 		if (!empty($answers) && is_array($answers) && count($answers)) {
 			$db->delete('FormidableAnswers', ['answerSetID' => $this->getAnswerSetID()]);
 			foreach ($answers as $answer) {

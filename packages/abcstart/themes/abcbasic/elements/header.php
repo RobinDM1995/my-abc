@@ -11,7 +11,6 @@
         <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getThemePath() ?>/css/main.css" />
         <link rel="stylesheet" media="print" type="text/css" href="<?php echo $this->getThemePath() ?>/css/print.css" />
 				<link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/css/jquery.ui.css">
-        <link rel="stylesheet" href="<?php echo $this->getThemePath()?>/css/repairform.css">
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- <link type="text/css" rel="stylesheet" href="<?php //echo $this->getThemePath()?>/materialize/css/materialize.min.css"/> -->
@@ -39,7 +38,7 @@
     <?php if($cPage->isEditMode()) { ?>
       <?php echo $html->css($view->getStylesheet('_edit.less'))?>
     <?php } ?>
-    <script src="<?php echo $this->getThemePath()?>/js/offers.js"></script>
+    <!-- <script src="<?php //echo $this->getThemePath()?>/js/offers.js"></script> -->
     <!-- <script src="<?php //echo $this->getThemePath()?>/js/repairform.js"></script> -->
 
     <script>
@@ -53,10 +52,10 @@
             document.querySelector('head').appendChild(msViewportStyle)
         }
     </script>
-    <!--[if lt IE 9]>
+    <!-- [if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
   </head>
   <body class="hold-transition skin-blue-light sidebar-mini">
   <div class="wrapper">

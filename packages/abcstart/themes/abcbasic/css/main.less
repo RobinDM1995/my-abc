@@ -1,9 +1,32 @@
 @import "presets/defaults.less";
-.abcgreen{
-  color: #74b843;
-}
+// .ccm-page{
+  .abcgreen{
+    color: #74b843;
+  }
+  .formidable .formidable_row, .formidable .formidable_row .element{
+    overflow: visible;
+  }
 
-html.wrapper , body.wrapper{
+  .hiddendiv{
+    visibility: hidden;
+  }
+
+  .ccm-block-cover{
+    margin-left: -10px;
+  }
+
+  div.wrapper input:not([type]), div.wrapper input[type=text]:not(.browser-default), div.wrapper input[type=password]:not(.browser-default), div.wrapper input[type=email]:not(.browser-default), div.wrapper input[type=url]:not(.browser-default), div.wrapper input[type=time]:not(.browser-default), div.wrapper input[type=date]:not(.browser-default), div.wrapper input[type=datetime]:not(.browser-default), div.wrapper input[type=datetime-local]:not(.browser-default), div.wrapper input[type=tel]:not(.browser-default), div.wrapper input[type=number]:not(.browser-default), div.wrapper input[type=search]:not(.browser-default), div.wrapper textarea.materialize-textarea{
+    height: 4rem;
+  }
+
+  div.wrapper .input-field > label:not(.label-icon){
+    color: #d1d1da;
+    font-weight: normal;
+  }
+
+
+
+html.wrapper , body.wrapper, body{
   background-color: #f9fafc;
 }
 .wrapper body{
@@ -103,6 +126,7 @@ html.wrapper , body.wrapper{
 
 .btn-abc, .btn-abc-custom, .btn-abc-grey{
   border-radius: 0px;
+  text-transform:capitalize !important;
 }
 #acceptbtn, #feedbackbtn{
   margin: 5px auto;
@@ -464,3 +488,4 @@ div.wrapper .btn, div.wrapper .btn-large, div.wrapper .btn-small{
     width: 75%;
   }
 }
+// }

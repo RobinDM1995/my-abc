@@ -11,7 +11,9 @@
 }
 
 .wrapper .btn-primary-color-2 {
-
+  background-color: #8bb23b;
+  border-color: #8bb23b;
+  color: white;
 }
 .wrapper .btn-primary-color-2:hover,
 .wrapper .btn-primary-color-2:focus {

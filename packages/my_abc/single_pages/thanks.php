@@ -1,4 +1,7 @@
 <?php
+echo '<pre>';
+print_r($_SESSION);
+exit;
  ?>
   <div class="row">
     <div class="col-md-8">

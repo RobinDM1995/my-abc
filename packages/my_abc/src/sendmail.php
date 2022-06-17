@@ -179,7 +179,7 @@
         $mh->setBodyHTML($bodyFull);
         $mh->getBodyHTML();
         $mh->addAttachment($attachment);
-        $mh->from('info@abcparts.be', 'ABC parts Info');
+        $mh->from('offer@abcparts.be', 'ABC parts Offer');
         // $mh->bcc('abccontrolemail@gmail.com');
         // $mh->to($mailData['email']);
         $mh->to('rdm@abcparts.be');

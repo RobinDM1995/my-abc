@@ -7,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-04-13T11:10:22+02:00\n"
-"PO-Revision-Date: 2022-04-13T11:10:22+02:00\n"
+"POT-Creation-Date: 2021-12-29T15:54:58+01:00\n"
+"PO-Revision-Date: 2021-12-29T15:54:58+01:00\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
@@ -270,7 +270,7 @@ msgstr ""
 #: packages/my_abc/controllers/single_page/agreementfs.php:20
 #: packages/my_abc/single_pages/agreementfs.php:230
 msgid "Overeenkomst interventies ter plaatse "
-msgstr "Conditions d'intervention sur site "
+msgstr "Convention d'intervention sur site "
 
 #: packages/my_abc/controllers/single_page/agreementfs.php:21
 #: packages/my_abc/controllers/single_page/agreementfs.php:19
@@ -282,10 +282,8 @@ msgstr "Page "
 msgid " van {nb}"
 msgstr " de {nb}"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:128
-#: packages/my_abc/src/sendmail.php:16
-#: packages/my_abc/jobs/sendmail_agreements.php:120
 #: packages/my_abc/controllers/single_page/agreementfs.php:127
+#: packages/my_abc/src/sendmail.php:16
 #: packages/my_abc/jobs/sendmail_agreements.php:111
 #: packages/my_abc/jobs/sendmail_agreements.php:117
 #: packages/my_abc/jobs/sendmail_agreements.php:114
@@ -298,6 +296,7 @@ msgstr " de {nb}"
 #: packages/my_abc/controllers/single_page/agreementfs.php:145
 #: packages/my_abc/controllers/single_page/agreementfs.php:162
 #: packages/my_abc/controllers/single_page/agreementfs.php:133
+#: packages/my_abc/controllers/single_page/agreementfs.php:128
 #: packages/my_abc/controllers/single_page/agreementfs.php:121
 #: packages/my_abc/controllers/single_page/agreementfs.php:117
 #: packages/my_abc/controllers/single_page/agreementfs.php:355
@@ -333,7 +332,6 @@ msgstr " de {nb}"
 msgid "Your repair request has been registered"
 msgstr "Votre réparation a été enregistrée."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:281
 #: packages/my_abc/controllers/single_page/agreementfs.php:280
 #: packages/my_abc/controllers/single_page/agreementfs.php:265
 #: packages/my_abc/controllers/single_page/agreementfs.php:266
@@ -341,8 +339,6 @@ msgstr "Votre réparation a été enregistrée."
 msgid "We hebben uw bevestiging goed ontvangen."
 msgstr "Nous avons reçu votre confirmation."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:282
-#: packages/my_abc/controllers/single_page/agreementfs.php:613
 #: packages/my_abc/controllers/single_page/agreementfs.php:281
 #: packages/my_abc/controllers/single_page/agreementfs.php:612
 #: packages/my_abc/controllers/single_page/agreementfs.php:266
@@ -353,8 +349,6 @@ msgstr "Nous avons reçu votre confirmation."
 msgid "De overeenkomst werd bevestigd door "
 msgstr "Ce document a été confirmé par "
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:283
-#: packages/my_abc/controllers/single_page/agreementfs.php:613
 #: packages/my_abc/controllers/single_page/agreementfs.php:282
 #: packages/my_abc/controllers/single_page/agreementfs.php:612
 #: packages/my_abc/controllers/single_page/agreementfs.php:266
@@ -375,7 +369,6 @@ msgstr "Ce document a été confirmé par "
 msgid " op "
 msgstr " le "
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:284
 #: packages/my_abc/controllers/single_page/agreementfs.php:283
 #: packages/my_abc/controllers/single_page/agreementfs.php:267
 #: packages/my_abc/controllers/single_page/agreementfs.php:268
@@ -385,7 +378,6 @@ msgstr " le "
 msgid "In de bijlage kan u uw overeenkomst terugvinden."
 msgstr "Ci-joint vous pouvez trouver le document."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:297
 #: packages/my_abc/controllers/single_page/agreementfs.php:296
 #: packages/my_abc/controllers/single_page/agreementfs.php:280
 #: packages/my_abc/controllers/single_page/agreementfs.php:279
@@ -393,14 +385,12 @@ msgstr "Ci-joint vous pouvez trouver le document."
 msgid "Bevestiging interventievoorwaarden "
 msgstr "Confirmation des conditions d'intervention "
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:387
 #: packages/my_abc/controllers/single_page/agreementfs.php:386
 msgid "Overeenkomst interventies "
 msgstr ""
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:394
-#: packages/my_abc/single_pages/agreementfs.php:30
 #: packages/my_abc/controllers/single_page/agreementfs.php:393
+#: packages/my_abc/single_pages/agreementfs.php:30
 #: packages/my_abc/controllers/single_page/agreementfs.php:349
 #: packages/my_abc/single_pages/agreementfs.php:26
 #: packages/my_abc/controllers/single_page/agreementfs.php:348
@@ -423,16 +413,14 @@ msgstr ""
 msgid "Overeenkomst interventies ter plaatse"
 msgstr "Contrat interventions sur site"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:397
-#: packages/my_abc/single_pages/agreementfs.php:31
 #: packages/my_abc/controllers/single_page/agreementfs.php:396
+#: packages/my_abc/single_pages/agreementfs.php:31
 #, php-format
 msgid "Geldig van %1$s tot 31/12/"
 msgstr ""
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:404
-#: packages/my_abc/single_pages/agreementfs.php:37
 #: packages/my_abc/controllers/single_page/agreementfs.php:403
+#: packages/my_abc/single_pages/agreementfs.php:37
 #: packages/my_abc/controllers/single_page/agreementfs.php:359
 #: packages/my_abc/single_pages/agreementfs.php:33
 #: packages/my_abc/controllers/single_page/agreementfs.php:358
@@ -458,9 +446,8 @@ msgstr ""
 msgid "Tussen:"
 msgstr "Entre :"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:405
-#: packages/my_abc/single_pages/agreementfs.php:46
 #: packages/my_abc/controllers/single_page/agreementfs.php:404
+#: packages/my_abc/single_pages/agreementfs.php:46
 #: packages/my_abc/controllers/single_page/agreementfs.php:360
 #: packages/my_abc/single_pages/agreementfs.php:42
 #: packages/my_abc/controllers/single_page/agreementfs.php:359
@@ -486,11 +473,10 @@ msgstr "Entre :"
 msgid "En:"
 msgstr "Et :"
 
+#: packages/my_abc/controllers/single_page/agreementfs.php:413
 #: packages/my_abc/controllers/single_page/agreementfs.php:414
-#: packages/my_abc/controllers/single_page/agreementfs.php:415
 #: packages/my_abc/single_pages/agreementfs.php:42
 #: packages/my_abc/single_pages/agreementfs.php:51
-#: packages/my_abc/controllers/single_page/agreementfs.php:413
 #: packages/my_abc/controllers/single_page/agreementfs.php:369
 #: packages/my_abc/controllers/single_page/agreementfs.php:370
 #: packages/my_abc/single_pages/agreementfs.php:38
@@ -501,16 +487,14 @@ msgstr "Et :"
 msgid "Btw: "
 msgstr "Tva : "
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:417
 #: packages/my_abc/controllers/single_page/agreementfs.php:416
 #: packages/my_abc/controllers/single_page/agreementfs.php:372
 #: packages/my_abc/controllers/single_page/agreementfs.php:371
 msgid "Contactpersoon: "
 msgstr "Personne de contact : "
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:423
-#: packages/my_abc/single_pages/agreementfs.php:59
 #: packages/my_abc/controllers/single_page/agreementfs.php:422
+#: packages/my_abc/single_pages/agreementfs.php:59
 #: packages/my_abc/controllers/single_page/agreementfs.php:378
 #: packages/my_abc/single_pages/agreementfs.php:55
 #: packages/my_abc/controllers/single_page/agreementfs.php:377
@@ -536,9 +520,8 @@ msgstr "Personne de contact : "
 msgid "Algemene interventievoorwaarden"
 msgstr "Conditions Générales"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:428
-#: packages/my_abc/single_pages/agreementfs.php:60
 #: packages/my_abc/controllers/single_page/agreementfs.php:427
+#: packages/my_abc/single_pages/agreementfs.php:60
 #: packages/my_abc/controllers/single_page/agreementfs.php:383
 #: packages/my_abc/single_pages/agreementfs.php:56
 #: packages/my_abc/controllers/single_page/agreementfs.php:382
@@ -563,9 +546,8 @@ msgstr "Conditions Générales"
 msgid "In overleg met de klant is het mogelijk om ter plaatse te komen tijdens de kantooruren, dit aan het vooropgestelde dagtarief."
 msgstr "En accord avec le client il est possible de venir sur site pendant les heures de bureau. Cela selon le tarif de jour spécifié ci-dessous."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:430
-#: packages/my_abc/single_pages/agreementfs.php:61
 #: packages/my_abc/controllers/single_page/agreementfs.php:429
+#: packages/my_abc/single_pages/agreementfs.php:61
 #: packages/my_abc/controllers/single_page/agreementfs.php:385
 #: packages/my_abc/single_pages/agreementfs.php:57
 #: packages/my_abc/controllers/single_page/agreementfs.php:384
@@ -591,13 +573,11 @@ msgstr "En accord avec le client il est possible de venir sur site pendant les h
 msgid "Onafhankelijk van het resultaat wordt onderstaande steeds gefactureerd per interventie"
 msgstr "Indépendamment du résultat final les points suivants seront facturés lors d’une intervention :"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:435
-#: packages/my_abc/controllers/single_page/agreementfs.php:590
+#: packages/my_abc/controllers/single_page/agreementfs.php:434
+#: packages/my_abc/controllers/single_page/agreementfs.php:589
 #: packages/my_abc/single_pages/agreementfs.php:63
 #: packages/my_abc/single_pages/agreementfs.php:100
 #: packages/my_abc/single_pages/agreementfs.php:168
-#: packages/my_abc/controllers/single_page/agreementfs.php:434
-#: packages/my_abc/controllers/single_page/agreementfs.php:589
 #: packages/my_abc/controllers/single_page/agreementfs.php:390
 #: packages/my_abc/controllers/single_page/agreementfs.php:545
 #: packages/my_abc/single_pages/agreementfs.php:59
@@ -645,9 +625,8 @@ msgstr "Indépendamment du résultat final les points suivants seront facturés 
 msgid "Vaste startkost"
 msgstr "Montant de base"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:438
-#: packages/my_abc/single_pages/agreementfs.php:64
 #: packages/my_abc/controllers/single_page/agreementfs.php:437
+#: packages/my_abc/single_pages/agreementfs.php:64
 #: packages/my_abc/controllers/single_page/agreementfs.php:393
 #: packages/my_abc/single_pages/agreementfs.php:60
 #: packages/my_abc/controllers/single_page/agreementfs.php:392
@@ -671,9 +650,8 @@ msgstr "Montant de base"
 msgid "Extra technische voorbereiding / opzoekingswerk"
 msgstr "Eventuelles recherches ainsi que certaines préparations nécessaires"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:441
-#: packages/my_abc/single_pages/agreementfs.php:65
 #: packages/my_abc/controllers/single_page/agreementfs.php:440
+#: packages/my_abc/single_pages/agreementfs.php:65
 #: packages/my_abc/controllers/single_page/agreementfs.php:396
 #: packages/my_abc/single_pages/agreementfs.php:61
 #: packages/my_abc/controllers/single_page/agreementfs.php:395
@@ -699,9 +677,8 @@ msgstr "Eventuelles recherches ainsi que certaines préparations nécessaires"
 msgid "De gepresteerde uren ter plaatse"
 msgstr "Les heures prestées sur place"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:444
-#: packages/my_abc/single_pages/agreementfs.php:66
 #: packages/my_abc/controllers/single_page/agreementfs.php:443
+#: packages/my_abc/single_pages/agreementfs.php:66
 #: packages/my_abc/controllers/single_page/agreementfs.php:399
 #: packages/my_abc/single_pages/agreementfs.php:62
 #: packages/my_abc/controllers/single_page/agreementfs.php:398
@@ -727,9 +704,8 @@ msgstr "Les heures prestées sur place"
 msgid "Gebruikte onderdelen"
 msgstr "Composants nécessaires pour l’intervention"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:447
-#: packages/my_abc/single_pages/agreementfs.php:67
 #: packages/my_abc/controllers/single_page/agreementfs.php:446
+#: packages/my_abc/single_pages/agreementfs.php:67
 #: packages/my_abc/controllers/single_page/agreementfs.php:402
 #: packages/my_abc/single_pages/agreementfs.php:63
 #: packages/my_abc/controllers/single_page/agreementfs.php:401
@@ -756,15 +732,13 @@ msgstr "Composants nécessaires pour l’intervention"
 msgid "De uren nodig voor de verplaatsing van en naar ABC Industrial Parts bv"
 msgstr "Les heures nécessaire pour le déplacement de et vers ABC Industrial Parts bv"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:450
-#: packages/my_abc/single_pages/agreementfs.php:68
 #: packages/my_abc/controllers/single_page/agreementfs.php:449
+#: packages/my_abc/single_pages/agreementfs.php:68
 msgid "Een kilometervergoeding heen en weer"
 msgstr ""
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:453
-#: packages/my_abc/single_pages/agreementfs.php:69
 #: packages/my_abc/controllers/single_page/agreementfs.php:452
+#: packages/my_abc/single_pages/agreementfs.php:69
 #: packages/my_abc/controllers/single_page/agreementfs.php:408
 #: packages/my_abc/single_pages/agreementfs.php:65
 #: packages/my_abc/controllers/single_page/agreementfs.php:407
@@ -791,9 +765,8 @@ msgstr ""
 msgid "Eventuele extra transportkosten, bv tunnelkosten"
 msgstr "Eventuellement frais de livraison exceptionnels p.ex : péage, tunnel"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:456
-#: packages/my_abc/single_pages/agreementfs.php:70
 #: packages/my_abc/controllers/single_page/agreementfs.php:455
+#: packages/my_abc/single_pages/agreementfs.php:70
 #: packages/my_abc/controllers/single_page/agreementfs.php:411
 #: packages/my_abc/single_pages/agreementfs.php:66
 #: packages/my_abc/controllers/single_page/agreementfs.php:410
@@ -819,9 +792,8 @@ msgstr "Eventuellement frais de livraison exceptionnels p.ex : péage, tunnel"
 msgid "Eventuele overnachtingskosten"
 msgstr "Eventuellement les frais de logement"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:459
-#: packages/my_abc/single_pages/agreementfs.php:72
 #: packages/my_abc/controllers/single_page/agreementfs.php:458
+#: packages/my_abc/single_pages/agreementfs.php:72
 #: packages/my_abc/controllers/single_page/agreementfs.php:414
 #: packages/my_abc/single_pages/agreementfs.php:68
 #: packages/my_abc/controllers/single_page/agreementfs.php:413
@@ -846,9 +818,8 @@ msgstr "Eventuellement les frais de logement"
 msgid "Dit betreft het verzamelen van het nodige werkmateriaal, het inladen van de wagen, administratieve afhandeling van het dossier"
 msgstr "Ceci concerne le rassemblement d’outillage nécessaire, chargement du véhicule, frais de gestion"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:465
-#: packages/my_abc/single_pages/agreementfs.php:74
 #: packages/my_abc/controllers/single_page/agreementfs.php:464
+#: packages/my_abc/single_pages/agreementfs.php:74
 #: packages/my_abc/controllers/single_page/agreementfs.php:420
 #: packages/my_abc/single_pages/agreementfs.php:70
 #: packages/my_abc/controllers/single_page/agreementfs.php:419
@@ -873,9 +844,8 @@ msgstr "Ceci concerne le rassemblement d’outillage nécessaire, chargement du 
 msgid "Uitzonderlijke interventievoorwaarden"
 msgstr "Conditions exceptionnelles"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:470
-#: packages/my_abc/single_pages/agreementfs.php:75
 #: packages/my_abc/controllers/single_page/agreementfs.php:469
+#: packages/my_abc/single_pages/agreementfs.php:75
 #: packages/my_abc/controllers/single_page/agreementfs.php:425
 #: packages/my_abc/single_pages/agreementfs.php:71
 #: packages/my_abc/controllers/single_page/agreementfs.php:424
@@ -900,7 +870,6 @@ msgstr "Conditions exceptionnelles"
 msgid "In overleg met de klant is het mogelijk om ter plaatse te komen buiten de kantooruren, dit aan het uitzonderlijke nacht-weekendtarief."
 msgstr "En accord avec le client il est possible de venir sur site hors des heures de bureau. Cela selon le tarif exceptionnel de nuit/weekend ci-dessous."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:475
 #: packages/my_abc/controllers/single_page/agreementfs.php:474
 #: packages/my_abc/controllers/single_page/agreementfs.php:430
 #: packages/my_abc/controllers/single_page/agreementfs.php:429
@@ -921,7 +890,6 @@ msgstr "En accord avec le client il est possible de venir sur site hors des heur
 msgid "Bovenstaande algemene interventievoorwaarden blijven van toepassing"
 msgstr "Les conditions générales ci-dessus restent d’application."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:478
 #: packages/my_abc/controllers/single_page/agreementfs.php:477
 #: packages/my_abc/controllers/single_page/agreementfs.php:433
 #: packages/my_abc/controllers/single_page/agreementfs.php:432
@@ -942,9 +910,8 @@ msgstr "Les conditions générales ci-dessus restent d’application."
 msgid "Prestaties buiten de kantooruren zijn enkel mogelijk na overleg met ABC"
 msgstr "Toute prestation hors des heures de bureau est uniquement possible en concertation avec ABC."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:481
-#: packages/my_abc/single_pages/agreementfs.php:79
 #: packages/my_abc/controllers/single_page/agreementfs.php:480
+#: packages/my_abc/single_pages/agreementfs.php:79
 #: packages/my_abc/controllers/single_page/agreementfs.php:436
 #: packages/my_abc/single_pages/agreementfs.php:75
 #: packages/my_abc/controllers/single_page/agreementfs.php:435
@@ -969,9 +936,8 @@ msgstr "Toute prestation hors des heures de bureau est uniquement possible en co
 msgid "Onder interventies buiten de kantooruren verstaan we interventies die plaatsvinden tussen 19 uur en 7 uur op weekdagen en interventies die uitgevoerd worden tijdens het weekend of op feestdagen."
 msgstr "Nous entendons par des interventions hors des heures de bureau toutes interventions ayant lieu entre 19 heures et 7 heures du matin les jours de semaine ainsi que les interventions ayant lieu le weekend ou jours fériés."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:487
-#: packages/my_abc/single_pages/agreementfs.php:86
 #: packages/my_abc/controllers/single_page/agreementfs.php:486
+#: packages/my_abc/single_pages/agreementfs.php:86
 #: packages/my_abc/controllers/single_page/agreementfs.php:442
 #: packages/my_abc/single_pages/agreementfs.php:82
 #: packages/my_abc/single_pages/agreementfs.php:81
@@ -998,9 +964,8 @@ msgstr "Nous entendons par des interventions hors des heures de bureau toutes in
 msgid "Tarieven"
 msgstr "Tarifs"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:494
-#: packages/my_abc/single_pages/agreementfs.php:88
 #: packages/my_abc/controllers/single_page/agreementfs.php:493
+#: packages/my_abc/single_pages/agreementfs.php:88
 #: packages/my_abc/controllers/single_page/agreementfs.php:449
 #: packages/my_abc/single_pages/agreementfs.php:84
 #: packages/my_abc/single_pages/agreementfs.php:83
@@ -1027,9 +992,8 @@ msgstr "Tarifs"
 msgid "Dagtarief / uur"
 msgstr "Tarif de jour / heure"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:498
-#: packages/my_abc/single_pages/agreementfs.php:94
 #: packages/my_abc/controllers/single_page/agreementfs.php:497
+#: packages/my_abc/single_pages/agreementfs.php:94
 #: packages/my_abc/controllers/single_page/agreementfs.php:453
 #: packages/my_abc/single_pages/agreementfs.php:90
 #: packages/my_abc/single_pages/agreementfs.php:89
@@ -1056,7 +1020,6 @@ msgstr "Tarif de jour / heure"
 msgid "Nacht-weekendtarief / uur"
 msgstr "Tarif de nuit et weekend / heure"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:502
 #: packages/my_abc/controllers/single_page/agreementfs.php:501
 #: packages/my_abc/controllers/single_page/agreementfs.php:457
 #: packages/my_abc/single_pages/agreementfs.php:96
@@ -1084,12 +1047,10 @@ msgstr "Tarif de nuit et weekend / heure"
 msgid "Start fee"
 msgstr "Montant de base"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:506
-#: packages/my_abc/controllers/single_page/agreementfs.php:593
-#: packages/my_abc/single_pages/agreementfs.php:106
-#: packages/my_abc/single_pages/agreementfs.php:169
 #: packages/my_abc/controllers/single_page/agreementfs.php:505
 #: packages/my_abc/controllers/single_page/agreementfs.php:592
+#: packages/my_abc/single_pages/agreementfs.php:106
+#: packages/my_abc/single_pages/agreementfs.php:169
 #: packages/my_abc/controllers/single_page/agreementfs.php:461
 #: packages/my_abc/controllers/single_page/agreementfs.php:548
 #: packages/my_abc/single_pages/agreementfs.php:102
@@ -1138,9 +1099,8 @@ msgstr "Montant de base"
 msgid "Kilometervergoeding"
 msgstr "Indemnité kilométrique"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:515
-#: packages/my_abc/single_pages/agreementfs.php:116
 #: packages/my_abc/controllers/single_page/agreementfs.php:514
+#: packages/my_abc/single_pages/agreementfs.php:116
 #: packages/my_abc/controllers/single_page/agreementfs.php:470
 #: packages/my_abc/single_pages/agreementfs.php:112
 #: packages/my_abc/single_pages/agreementfs.php:111
@@ -1150,9 +1110,8 @@ msgstr "Indemnité kilométrique"
 msgid "Kantooruren"
 msgstr "Heures de bureau"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:520
-#: packages/my_abc/single_pages/agreementfs.php:119
 #: packages/my_abc/controllers/single_page/agreementfs.php:519
+#: packages/my_abc/single_pages/agreementfs.php:119
 #: packages/my_abc/controllers/single_page/agreementfs.php:475
 #: packages/my_abc/single_pages/agreementfs.php:115
 #: packages/my_abc/single_pages/agreementfs.php:114
@@ -1179,18 +1138,14 @@ msgstr "Heures de bureau"
 msgid "Maandag"
 msgstr "Lundi"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:522
-#: packages/my_abc/controllers/single_page/agreementfs.php:526
-#: packages/my_abc/controllers/single_page/agreementfs.php:530
-#: packages/my_abc/controllers/single_page/agreementfs.php:534
-#: packages/my_abc/single_pages/agreementfs.php:122
-#: packages/my_abc/single_pages/agreementfs.php:128
-#: packages/my_abc/single_pages/agreementfs.php:134
-#: packages/my_abc/single_pages/agreementfs.php:140
 #: packages/my_abc/controllers/single_page/agreementfs.php:521
 #: packages/my_abc/controllers/single_page/agreementfs.php:525
 #: packages/my_abc/controllers/single_page/agreementfs.php:529
 #: packages/my_abc/controllers/single_page/agreementfs.php:533
+#: packages/my_abc/single_pages/agreementfs.php:122
+#: packages/my_abc/single_pages/agreementfs.php:128
+#: packages/my_abc/single_pages/agreementfs.php:134
+#: packages/my_abc/single_pages/agreementfs.php:140
 #: packages/my_abc/controllers/single_page/agreementfs.php:477
 #: packages/my_abc/controllers/single_page/agreementfs.php:481
 #: packages/my_abc/controllers/single_page/agreementfs.php:485
@@ -1268,9 +1223,8 @@ msgstr "Lundi"
 msgid "8 uur - 18 uur (doorlopend)"
 msgstr "8 h – 18 h (en continu)"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:524
-#: packages/my_abc/single_pages/agreementfs.php:125
 #: packages/my_abc/controllers/single_page/agreementfs.php:523
+#: packages/my_abc/single_pages/agreementfs.php:125
 #: packages/my_abc/controllers/single_page/agreementfs.php:479
 #: packages/my_abc/single_pages/agreementfs.php:121
 #: packages/my_abc/single_pages/agreementfs.php:120
@@ -1297,9 +1251,8 @@ msgstr "8 h – 18 h (en continu)"
 msgid "Dinsdag"
 msgstr "Mardi"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:528
-#: packages/my_abc/single_pages/agreementfs.php:131
 #: packages/my_abc/controllers/single_page/agreementfs.php:527
+#: packages/my_abc/single_pages/agreementfs.php:131
 #: packages/my_abc/controllers/single_page/agreementfs.php:483
 #: packages/my_abc/single_pages/agreementfs.php:127
 #: packages/my_abc/single_pages/agreementfs.php:126
@@ -1326,9 +1279,8 @@ msgstr "Mardi"
 msgid "Woensdag"
 msgstr "Mercredi"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:532
-#: packages/my_abc/single_pages/agreementfs.php:137
 #: packages/my_abc/controllers/single_page/agreementfs.php:531
+#: packages/my_abc/single_pages/agreementfs.php:137
 #: packages/my_abc/controllers/single_page/agreementfs.php:487
 #: packages/my_abc/single_pages/agreementfs.php:133
 #: packages/my_abc/single_pages/agreementfs.php:132
@@ -1355,9 +1307,8 @@ msgstr "Mercredi"
 msgid "Donderdag"
 msgstr "Jeudi"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:536
-#: packages/my_abc/single_pages/agreementfs.php:143
 #: packages/my_abc/controllers/single_page/agreementfs.php:535
+#: packages/my_abc/single_pages/agreementfs.php:143
 #: packages/my_abc/controllers/single_page/agreementfs.php:491
 #: packages/my_abc/single_pages/agreementfs.php:139
 #: packages/my_abc/single_pages/agreementfs.php:138
@@ -1384,9 +1335,8 @@ msgstr "Jeudi"
 msgid "Vrijdag"
 msgstr "Vendredi"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:538
-#: packages/my_abc/single_pages/agreementfs.php:146
 #: packages/my_abc/controllers/single_page/agreementfs.php:537
+#: packages/my_abc/single_pages/agreementfs.php:146
 #: packages/my_abc/controllers/single_page/agreementfs.php:493
 #: packages/my_abc/single_pages/agreementfs.php:142
 #: packages/my_abc/single_pages/agreementfs.php:141
@@ -1413,9 +1363,8 @@ msgstr "Vendredi"
 msgid "8 uur - 17.30 uur (doorlopend)"
 msgstr "8 h – 17h30 (en continu)"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:544
-#: packages/my_abc/single_pages/agreementfs.php:153
 #: packages/my_abc/controllers/single_page/agreementfs.php:543
+#: packages/my_abc/single_pages/agreementfs.php:153
 #: packages/my_abc/controllers/single_page/agreementfs.php:499
 #: packages/my_abc/single_pages/agreementfs.php:149
 #: packages/my_abc/single_pages/agreementfs.php:148
@@ -1442,9 +1391,8 @@ msgstr "8 h – 17h30 (en continu)"
 msgid "Uitstel van interventie ter plaatse"
 msgstr "Ajournement d’une intervention sur site"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:550
-#: packages/my_abc/single_pages/agreementfs.php:154
 #: packages/my_abc/controllers/single_page/agreementfs.php:549
+#: packages/my_abc/single_pages/agreementfs.php:154
 #: packages/my_abc/controllers/single_page/agreementfs.php:505
 #: packages/my_abc/single_pages/agreementfs.php:150
 #: packages/my_abc/single_pages/agreementfs.php:149
@@ -1470,9 +1418,8 @@ msgstr "Ajournement d’une intervention sur site"
 msgid "ABC Industrial Parts bv is in de mogelijkheid om interventies ter plaatse uit te stellen/te verplaatsen in geval van overmacht."
 msgstr "ABC Industrial Parts bv se réserve le droit de reporter les interventions sur site dans un cas de force majeur."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:556
-#: packages/my_abc/single_pages/agreementfs.php:156
 #: packages/my_abc/controllers/single_page/agreementfs.php:555
+#: packages/my_abc/single_pages/agreementfs.php:156
 #: packages/my_abc/controllers/single_page/agreementfs.php:511
 #: packages/my_abc/single_pages/agreementfs.php:152
 #: packages/my_abc/single_pages/agreementfs.php:151
@@ -1481,9 +1428,8 @@ msgstr "ABC Industrial Parts bv se réserve le droit de reporter les interventio
 msgid "Voorafbetaling van de interventie ter plaatse"
 msgstr "Paiement d'intervention sur site"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:562
-#: packages/my_abc/single_pages/agreementfs.php:157
 #: packages/my_abc/controllers/single_page/agreementfs.php:561
+#: packages/my_abc/single_pages/agreementfs.php:157
 #: packages/my_abc/controllers/single_page/agreementfs.php:517
 #: packages/my_abc/single_pages/agreementfs.php:153
 #: packages/my_abc/single_pages/agreementfs.php:152
@@ -1507,9 +1453,8 @@ msgstr "Paiement d'intervention sur site"
 msgid "Betaling van de interventie gebeurt steeds na de interventie en na ontvangst van de factuur, dit volgens de vastgelegde betalingsvoorwaarden."
 msgstr "Le paiement de l’intervention est à régler après l’intervention et à réception de la facture, ceci selon les conditions de paiement générales."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:566
-#: packages/my_abc/single_pages/agreementfs.php:158
 #: packages/my_abc/controllers/single_page/agreementfs.php:565
+#: packages/my_abc/single_pages/agreementfs.php:158
 #: packages/my_abc/controllers/single_page/agreementfs.php:521
 #: packages/my_abc/single_pages/agreementfs.php:154
 #: packages/my_abc/single_pages/agreementfs.php:153
@@ -1536,7 +1481,6 @@ msgstr "Le paiement de l’intervention est à régler après l’intervention e
 msgid "ABC Industrial Parts bv behoudt zich het recht voor om een voorafbetaling te vragen voor de interventie ter plaatse in volgende gevallen:"
 msgstr "ABC Industrial Parts bv se réserve le droit de demander un prépaiement pour une intervention sur site  dans les cas suivants :"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:572
 #: packages/my_abc/controllers/single_page/agreementfs.php:571
 #: packages/my_abc/controllers/single_page/agreementfs.php:527
 #: packages/my_abc/controllers/single_page/agreementfs.php:526
@@ -1556,7 +1500,6 @@ msgstr "ABC Industrial Parts bv se réserve le droit de demander un prépaiement
 msgid "U bent een nieuwe klant"
 msgstr "Il s’agit d’une intervention chez un nouveau client."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:575
 #: packages/my_abc/controllers/single_page/agreementfs.php:574
 #: packages/my_abc/controllers/single_page/agreementfs.php:530
 #: packages/my_abc/single_pages/agreementfs.php:157
@@ -1584,7 +1527,6 @@ msgstr "Il s’agit d’une intervention chez un nouveau client."
 msgid "De kredietverzekering adviseerd ABC Industrial Parts bv een voorafbetaling te vragen"
 msgstr "L’assurance de crédit avise ABC Industrial Parts bv de demander un prépaiement."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:578
 #: packages/my_abc/controllers/single_page/agreementfs.php:577
 #: packages/my_abc/controllers/single_page/agreementfs.php:533
 #: packages/my_abc/controllers/single_page/agreementfs.php:532
@@ -1602,7 +1544,6 @@ msgstr "L’assurance de crédit avise ABC Industrial Parts bv de demander un pr
 msgid "U heeft in het verleden reeds nagelaten om betalingen binnen de afgesproken betalingstermijn te betalen"
 msgstr "Dans le passé le client a omis de régler certains paiements dans le délai"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:581
 #: packages/my_abc/controllers/single_page/agreementfs.php:580
 #: packages/my_abc/controllers/single_page/agreementfs.php:536
 #: packages/my_abc/controllers/single_page/agreementfs.php:535
@@ -1622,9 +1563,8 @@ msgstr "Dans le passé le client a omis de régler certains paiements dans le d�
 msgid "U hebt op het moment van de interventie nog openstaande facturen bij ABC Industrial Parts bv."
 msgstr "Le client a des factures en souffrance en faveur d’ABC Industrial Parts bv au moment de sa demande d’intervention."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:585
-#: packages/my_abc/single_pages/agreementfs.php:166
 #: packages/my_abc/controllers/single_page/agreementfs.php:584
+#: packages/my_abc/single_pages/agreementfs.php:166
 #: packages/my_abc/controllers/single_page/agreementfs.php:540
 #: packages/my_abc/single_pages/agreementfs.php:162
 #: packages/my_abc/single_pages/agreementfs.php:161
@@ -1648,9 +1588,8 @@ msgstr "Le client a des factures en souffrance en faveur d’ABC Industrial Part
 msgid "In geval van voorafbetaling ontvangt u een pro-formafactuur. Onderstaande wordt aangerekend:"
 msgstr "En cas de prépaiement, vous recevrez une facture pro-forma. Les coûts ci-dessous seront repris sur la facture pro-forma :"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:596
-#: packages/my_abc/single_pages/agreementfs.php:170
 #: packages/my_abc/controllers/single_page/agreementfs.php:595
+#: packages/my_abc/single_pages/agreementfs.php:170
 #: packages/my_abc/controllers/single_page/agreementfs.php:551
 #: packages/my_abc/single_pages/agreementfs.php:166
 #: packages/my_abc/single_pages/agreementfs.php:165
@@ -1676,9 +1615,8 @@ msgstr "En cas de prépaiement, vous recevrez une facture pro-forma. Les coûts 
 msgid "Standaardforfait van 8 uren"
 msgstr "Un forfait de 8 heures de travail"
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:600
-#: packages/my_abc/single_pages/agreementfs.php:172
 #: packages/my_abc/controllers/single_page/agreementfs.php:599
+#: packages/my_abc/single_pages/agreementfs.php:172
 #: packages/my_abc/controllers/single_page/agreementfs.php:555
 #: packages/my_abc/single_pages/agreementfs.php:168
 #: packages/my_abc/single_pages/agreementfs.php:167
@@ -1703,9 +1641,8 @@ msgstr "Un forfait de 8 heures de travail"
 msgid "Pas na ontvangst van een geldig betalingsbewijs of de effectieve betaling op rekening van ABC Industrial Parts bv wordt de interventie uitgevoerd."
 msgstr "Seul après réception d’une preuve de paiement valable ou le versement effectif sur le compte d’ABC Industrial Parts bv l’intervention pourra avoir lieu."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:607
-#: packages/my_abc/single_pages/agreementfs.php:198
 #: packages/my_abc/controllers/single_page/agreementfs.php:606
+#: packages/my_abc/single_pages/agreementfs.php:198
 #: packages/my_abc/controllers/single_page/agreementfs.php:562
 #: packages/my_abc/single_pages/agreementfs.php:194
 #: packages/my_abc/single_pages/agreementfs.php:193
@@ -1716,7 +1653,6 @@ msgstr "Seul après réception d’une preuve de paiement valable ou le versemen
 msgid "Akkoord voor deze overeenkomst wordt beschouwd als akkoord van de volledige firma."
 msgstr "En donnant votre accord, il est considéré que vous-même ainsi que l’entièreté des membres de votre société acceptent ce contrat."
 
-#: packages/my_abc/controllers/single_page/agreementfs.php:610
 #: packages/my_abc/controllers/single_page/agreementfs.php:609
 #: packages/my_abc/controllers/single_page/agreementfs.php:565
 #: packages/my_abc/controllers/single_page/agreementfs.php:564
@@ -2333,69 +2269,51 @@ msgstr ""
 msgid "Send a mail to customers to agree with the fieldservice agreement"
 msgstr ""
 
-#: packages/my_abc/jobs/sendmail_agreements.php:102
 #: packages/my_abc/jobs/sendmail_agreements.php:95
 msgid "Interventieovereenkomst 2022"
 msgstr "Contrat d'intervention 2022"
 
-#: packages/my_abc/jobs/sendmail_agreements.php:282
-#: packages/my_abc/jobs/sendmail_agreements.php:297
 #: packages/my_abc/jobs/sendmail_agreements.php:264
 #: packages/my_abc/jobs/sendmail_agreements.php:270
 #: packages/my_abc/jobs/sendmail_agreements.php:267
 msgid "Beste, "
 msgstr "Cher client, "
 
-#: packages/my_abc/jobs/sendmail_agreements.php:283
 #: packages/my_abc/jobs/sendmail_agreements.php:265
 #: packages/my_abc/jobs/sendmail_agreements.php:271
 #: packages/my_abc/jobs/sendmail_agreements.php:268
 msgid "Naar aanleiding van onze samenwerking in 2021, ontvangt u deze e-mail."
 msgstr "Nous vous envoyons cet email, donnant suite à notre coopération en 2021."
 
-#: packages/my_abc/jobs/sendmail_agreements.php:284
-#: packages/my_abc/jobs/sendmail_agreements.php:299
 #: packages/my_abc/jobs/sendmail_agreements.php:266
 #: packages/my_abc/jobs/sendmail_agreements.php:272
 #: packages/my_abc/jobs/sendmail_agreements.php:269
 msgid "In 2021 heeft u een beroep gedaan op ABC Industrial Parts bv voor het uitvoeren van een interventie ter plaatse. In 2022 willen we deze aanvragen even efficiënt kunnen behandelen en willen we geen tijd verliezen met het invullen en ondertekenen van de interventieovereenkomst."
 msgstr "En 2021 vous avez fait appel à ABC Industrial Parts bv pour effectuer une intervention sur site. Aussi en 2022 nous voulons traiter vos demandes efficacement, ceci sans perdre un temps précieux en remplissant et signant le contrat annuel."
 
-#: packages/my_abc/jobs/sendmail_agreements.php:285
-#: packages/my_abc/jobs/sendmail_agreements.php:300
 #: packages/my_abc/jobs/sendmail_agreements.php:267
 #: packages/my_abc/jobs/sendmail_agreements.php:273
 #: packages/my_abc/jobs/sendmail_agreements.php:270
 msgid "Daarom vindt u hieronder de link met de nieuwe jaarovereenkomst waarbij de interventievoorwaarden voor 2022 worden verduidelijkt. Wij vragen u vriendelijk deze overeenkomst in te vullen voor akkoord."
 msgstr "C’est pourquoi vous trouverez ci-dessous le lien pour notre nouveau contrat annuel où nous clarifions les conditions d’intervention sur site 2022. Auriez-vous l’amabilité de compléter ce contrat ?"
 
-#: packages/my_abc/jobs/sendmail_agreements.php:287
-#: packages/my_abc/jobs/sendmail_agreements.php:302
 #: packages/my_abc/jobs/sendmail_agreements.php:269
 #: packages/my_abc/jobs/sendmail_agreements.php:275
 #: packages/my_abc/jobs/sendmail_agreements.php:272
 msgid "Zonder getekende overeenkomst zullen er geen interventies uitgevoerd worden."
 msgstr "Sans contrat signé, les interventions demandées ne pourront pas avoir lieu."
 
-#: packages/my_abc/jobs/sendmail_agreements.php:288
-#: packages/my_abc/jobs/sendmail_agreements.php:303
 #: packages/my_abc/jobs/sendmail_agreements.php:270
 #: packages/my_abc/jobs/sendmail_agreements.php:276
 #: packages/my_abc/jobs/sendmail_agreements.php:273
 msgid "Mocht u verdere vragen hebben, aarzel niet om ons te contacteren."
 msgstr "N’hésitez pas à nous contacter si vous avez d’autres questions."
 
-#: packages/my_abc/jobs/sendmail_agreements.php:289
-#: packages/my_abc/jobs/sendmail_agreements.php:304
 #: packages/my_abc/jobs/sendmail_agreements.php:271
 #: packages/my_abc/jobs/sendmail_agreements.php:277
 #: packages/my_abc/jobs/sendmail_agreements.php:274
 msgid "Het ABC Team"
 msgstr "L’équipe ABC"
-
-#: packages/my_abc/jobs/sendmail_agreements.php:298
-msgid "Daar we nog geen reactie ontvangen hebben op onze e-mail, vindt u hieronder nogmaals de aangepaste interventievoorwaarden voor 2022."
-msgstr "Parce que nous n’avons pas encore reçu de réponse, nous vous envoyons les conditions d’intervention sur site 2022 une seconde fois."
 
 #: packages/abcstart/controller.php:33
 msgid "Adds a new theme, a new user group, new blocks and a google preview. Sets permissions correctly for the user groups."

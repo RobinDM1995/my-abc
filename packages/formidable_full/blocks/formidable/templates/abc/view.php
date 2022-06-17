@@ -1,8 +1,10 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <?php
+$db = Database::connection();
 // set locale for Javascript errors (src/Formidable/Validator/Result.php)
-$_SESSION['localeJS'] = $f->getLocale(); ?>
+$_SESSION['localeJS'] = $f->getLocale();
+?>
 
 <?php if (!$f || !$f->getFormID()) { ?>
     <div class="alert alert-danger">
@@ -72,18 +74,10 @@ $_SESSION['localeJS'] = $f->getLocale(); ?>
                                         foreach($elements as $element) {
                                             if (in_array($element->getElementType(), array('hidden', 'hr', 'heading', 'line'))) echo $element->getInput();
                                             else { ?>
-                                                <div class="element form-group <?php echo $element->getHandle(); ?>">
-                                                    <?php if ($column->hasElementsWithLabels()) { ?>
-                                                        <?php if (!$element->getPropertyValue('label_hide')) { ?>
-                                                            <label for="<?php echo $element->getHandle(); ?>">
-                                                                <?php echo $element->getLabel(); ?>
-                                                                <?php if ($element->getPropertyValue('required')) { ?>
-                                                                    <span class="required">*</span>
-                                                                <?php } ?>
-                                                            </label>
-                                                        <?php } ?>
-                                                    <?php } ?>
-                                                    <div class="input <?php echo $element->getPropertyValue('label_hide')?'no_label':'has_label'; ?>">
+                                                <div class="element  form-group <?php echo $element->getHandle();?>">
+
+
+                                                    <div class="input input-field <?php echo $element->getPropertyValue('label_hide')?'no_label':'has_label'; ?>">
 
                                                         <?php
                                                             // Changing elements format (for checkboxes and radios)
@@ -99,6 +93,16 @@ $_SESSION['localeJS'] = $f->getLocale(); ?>
                                                                     <?php } ?>
                                                                 </div>
                                                             </div>
+                                                        <?php } ?>
+                                                        <?php if ($column->hasElementsWithLabels()) { ?>
+                                                            <?php if (!$element->getPropertyValue('label_hide')) { ?>
+                                                                <label for="<?php echo $element->getHandle(); ?>">
+                                                                    <?php echo $element->getLabel(); ?>
+                                                                    <?php if ($element->getPropertyValue('required')) { ?>
+                                                                        <span class="required">*</span>
+                                                                    <?php } ?>
+                                                                </label>
+                                                            <?php } ?>
                                                         <?php } ?>
                                                     </div>
 
@@ -165,6 +169,182 @@ $_SESSION['localeJS'] = $f->getLocale(); ?>
                 <?php } ?>
             </form>
         </div>
+
+        <!-- SESSION PREFILL -->
+        <?php
+        if($_SESSION['answers']){
+          $prefillFieldIDs = array(59, 549, 535, 55, 69,57,137, 58, 540, 541, 542, 543, 354, 356, 134, 135, 138, 352,143, 272,273,274, 275,276,364,365,366,279,281,280,282, 242,243,245,244,246,249,251,250,252);
+
+          foreach($_SESSION['answers'] as $answer){
+            $elementID = $answer['elementID'];
+            if(array_search($elementID, $prefillFieldIDs) !== FALSE){
+              if($elementID == 76 || $elementID == 261 || $elementID == 291 || $elemntID == 352 || $elementID == 143){
+                $value = unserialize($answer['answer_unformated']);
+              }else{
+                $value = $answer['answer_formated'];
+              }
+
+              $result = $db->getRow('SELECT * FROM FormidableFormElements WHERE elementID = ' . $elementID);
+
+              $data['#' . $result['label_import']] = $value;
+            }
+          }
+        ?>
+        <script type="text/javascript">
+          <?php foreach($data as $key => $val){
+            if($key == '#abcklant-352' || $key == '#admin-contact-143'){
+              if($val == 'Ik ben al klant bij ABC.' || isset($val['value'][0]) && $val['value'][0] == 'Ja'){
+                ?>
+                $('<?= $key . '1'?>').prop('checked', true);
+                <?php
+              }else{
+                ?>
+                $('<?= $key . '2'?>').prop('checked', true);
+                <?php
+              }
+            }
+            ?>
+            $('<?= $key?>').val('<?= $val?>');
+            <?php
+          } ?>
+        </script>
+      <?php } ?>
+
+        <!-- PREFILL FORM -->
+        <?php
+          $db = \Database::connection();
+          if($_GET['hash']){
+            $stmt = $db->prepare('SELECT * FROM prefillrepairlinks WHERE hash = :hash');
+            $stmt->execute(array(
+              ":hash" => $_GET['hash']
+            ));
+
+            $result = $stmt->fetch();
+
+            $prefillData = json_decode($result['jsondata'], true);
+            $prefillData['desc'] = strip_tags($prefillData['desc']);
+            $prefillData['desc'] = str_replace("\n", '\\n', $prefillData['desc']);
+
+            // echo '<pre>';
+            // print_r($prefillData);
+            // exit;
+        ?>
+        <script type="text/javascript">
+        $('.newcustomer').css( "display", "none" );
+        //nl
+        $('#referentie-85').css("display", "none");
+        $('#referentie-535').css("display", "block");
+        //en
+        $('#reference-267').css("display", "none");
+        $('#reference-536').css("display", "block");
+        //fr
+        $('#reference-297').css("display", "none");
+        $('#reference-537').css("display", "block");
+
+
+        if("<?= $prefillData['lang']?>" == 'Dutch'){
+          var compName = $('#bedrijfsnaam-59');
+          var firstname = $('#voornaam-55');
+          var lastname = $('#familienaam-69');
+          var email = $('#e-mailadres-58');
+          var phone = $('#telefoon-gsm-57');
+          var brand = $('#merknaam-62');
+          var item = $('#typeartikelnummer-63');
+          var desc = $('#foutomschrijving-64');
+          var lowPrior = $('#prioriteit-761');
+          var medPrior = $('#prioriteit-762');
+          var highPrior = $('#prioriteit-763');
+          var withOffer = $('#offerte-781');
+          var withoutOffer = $('#offerte-782');
+          var ref = $('#referentie-85');
+          var ref2 = $('#referentie-535');
+        }
+
+        if("<?= $prefillData['lang']?>" == 'English'){
+          var compName = $('#company-name-242');
+          var firstname = $('#first-name-243');
+          var lastname = $('#surname-245');
+          var email = $('#e-mail-address-244');
+          var phone = $('#telefoon-gsm-246');
+          var brand = $('#brand-name-254');
+          var item = $('#typearticle-number-255');
+          var desc = $('#error-description-256');
+          var lowPrior = $('#priority-2611');
+          var medPrior = $('#priority-2612');
+          var highPrior = $('#priority-2613');
+          var withOffer = $('#offer-2631');
+          var withoutOffer = $('#offer-2632');
+          var ref = $('#reference-267');
+          var ref2 = $('#reference-536');
+        }
+
+        if("<?= $prefillData['lang']?>" == 'French'){
+          var compName = $('#nom-de-lentreprise-272');
+          var firstname = $('#prenom-273');
+          var lastname = $('#nom-de-famille-275');
+          var email = $('#e-mail-274');
+          var phone = $('#telephonegsm-276');
+          var brand = $('#marque-284');
+          var item = $('#type-numero-darticle-285');
+          var desc = $('#analyse-de-defaut-286');
+          var lowPrior = $('#priorite-2911');
+          var medPrior = $('#priorite-2912');
+          var highPrior = $('#priorite-2913');
+          var withOffer = $('#devis-2931');
+          var withoutOffer = $('#devis-2932');
+          var ref = $('#reference-297');
+          var ref2 = $('#reference-537');
+        }
+
+
+          compName.val("<?= addslashes($prefillData['compName'])?>");
+          firstname.val("<?= addslashes($prefillData['firstname'])?>");
+          lastname.val("<?= addslashes($prefillData['lastname'])?>");
+          email.val("<?= addslashes($prefillData['email'])?>");
+          phone.val("<?= addslashes($prefillData['phone'])?>");
+          brand.val("<?= addslashes($prefillData['brand'])?>");
+          item.val("<?= addslashes($prefillData['code'])?>");
+          desc.val("<?= $prefillData['desc']?>");
+          switch("<?= $prefillData['priority']?>"){
+            case 'INL':
+            lowPrior.prop("checked", true);
+            break;
+
+            case 'INM':
+            medPrior.prop("checked", true);
+            break;
+
+            case 'INH':
+            highPrior.prop("checked", true);
+            break;
+
+            default:
+            lowPrior.prop("checked", true);
+          }
+          if("<?= $prefillData['offer']?>" == 1){
+            withOffer.prop("checked", true);
+          }else{
+            withoutOffer.prop("checked", true);
+          }
+          ref.val("<?= $prefillData['ref']?>");
+          ref2.val("<?= $prefillData['ref']?>");
+          </script>
+      <?php }else{
+        ?>
+        <script type="text/javascript">
+        //nl
+        $('#referentie-85').css("display", "block");
+        $('#referentie-535').css("display", "none");
+        //en
+        $('#reference-267').css("display", "block");
+        $('#reference-536').css("display", "none");
+        //fr
+        $('#reference-297').css("display", "block");
+        $('#reference-537').css("display", "none");
+        </script>
+        <?php
+      } ?>
+        <!-- ADMINISTRATIVE COST -->
         <?php
           $db = \Database::connection();
           $serviceCode = 'ANM' . date('Y');
@@ -190,19 +370,19 @@ $_SESSION['localeJS'] = $f->getLocale(); ?>
           $servicePrice = $result['baseprice'];
         ?>
         <script type="text/javascript">
-        var adminCostLabel = $('label[for="opgelet-er-wordt-een-extra-administratieve-kost-aangerekend-bij-het-afkeuren-van-een-offerte-1321"]');
 
-        if(typeof adminCostLabel.html() == "undefined"){
-          var adminCostLabel = $('label[for="opgelet-er-wordt-een-extra-administratieve-kost-aangerekend-bij-het-afkeuren-van-een-offerte-2641"]');
-        }
+          var adminCostLabel = $('label[for="opgelet-er-wordt-een-extra-administratieve-kost-aangerekend-bij-het-afkeuren-van-een-offerte-1321"]');
 
-        if(typeof adminCostLabel.html() == "undefined"){
-          var adminCostLabel = $('label[for="opgelet-er-wordt-een-extra-administratieve-kost-aangerekend-bij-het-afkeuren-van-een-offerte-2941"]');
-        }
+          if(typeof adminCostLabel.html() == "undefined"){
+            var adminCostLabel = $('label[for="opgelet-er-wordt-een-extra-administratieve-kost-aangerekend-bij-het-afkeuren-van-een-offerte-2641"]');
+          }
 
-        var labelText = adminCostLabel.html() + '(€' + <?= $servicePrice?> + ')';
-        adminCostLabel.html(labelText);
+          if(typeof adminCostLabel.html() == "undefined"){
+            var adminCostLabel = $('label[for="opgelet-er-wordt-een-extra-administratieve-kost-aangerekend-bij-het-afkeuren-van-een-offerte-2941"]');
+          }
+
+          var labelText = adminCostLabel.html() + '(€' + <?= $servicePrice?> + ')';
+          adminCostLabel.html(labelText);
         </script>
-
     <?php } ?>
-<?php }
+<?php } ?>

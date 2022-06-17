@@ -14,15 +14,16 @@ class Results extends DashboardPageController
 
     private $form = null;
 
-    public function __construct($c) {	
+    public function __construct($c) {
 		parent::__construct($c);
 
 		$session = Core::make('app')->make('session');
 		$formID = $session->get('formidableFormID');
+
 		if (intval($this->get('formID')) != 0) $formID = intval($this->get('formID'));
 
         $f = Form::getByID($formID);
-		if (!is_object($f)) $f = Formidable::getFirstForm();		
+		if (!is_object($f)) $f = Formidable::getFirstForm();
         if (!is_object($f)) return false;
 
         $this->form = $f;
@@ -38,7 +39,7 @@ class Results extends DashboardPageController
 
         $this->requireAsset('javascript', 'formidable/dashboard/results');
         $this->requireAsset('css', 'formidable/dashboard');
-        
+
         if (!is_object($this->form)) return false;
 
         // Check permissions now!
@@ -48,17 +49,17 @@ class Results extends DashboardPageController
             $result = $search->getCurrentSearchObject();
             $list = $result->getItemListObject();
             $this->set('result', $result);
-            
-            $script = "";         
+
+            $script = "";
             $result = json_encode($result->getJSONObject());
-            $script .=  "function FormidableResultWaitWhileLoading() { 
+            $script .=  "function FormidableResultWaitWhileLoading() {
                             if ($.isFunction(ConcreteAjaxSearch) && $.isFunction(FormidableResultLoader)) {
                                 FormidableResultLoader();
-                                formidable_results_list = $('#ccm-dashboard-content').concreteFormidableResult({result: " . $result . "});                                 
+                                formidable_results_list = $('#ccm-dashboard-content').concreteFormidableResult({result: " . $result . "});
                             }
                             else setTimeout(function() { FormidableResultWaitWhileLoading(); }, 50);
                         };
-                        FormidableResultWaitWhileLoading();";                      
+                        FormidableResultWaitWhileLoading();";
             $script .= "$('.ccm-header-search-form-select select').on('change', function() { window.location.href = '".URL::to('/dashboard/formidable/results/')."?formID='+$(this).val(); });";
 
             if (!empty($script)) $this->addFooterItem("<script type=\"text/javascript\">var formidable_results_list = null; $(function() {".$script."});</script>");

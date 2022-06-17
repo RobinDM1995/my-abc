@@ -19,7 +19,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'my_abc';
     protected $appVersionRequired = '5.7.5.6';
-    protected $pkgVersion = '0.1.66';
+    protected $pkgVersion = '0.1.72';
 
     public function getPackageDescription()
     {
@@ -72,16 +72,26 @@ class Controller extends Package
              $receipt=SinglePage::add('/receipt', $pkg);
         }
 
+        $repairlinkcustomers=Page::getByPath('/repairlinkcustomers');
+        if( !is_object($repairlinkcustomers) || !intval($repairlinkcustomers->getCollectionID()) ){
+             $repairlinkcustomers=SinglePage::add('/repairlinkcustomers', $pkg);
+        }
+
+        $repairlinkcustomers=Page::getByPath('/thanks');
+        if( !is_object($thanks) || !intval($thanks->getCollectionID()) ){
+             $thanks=SinglePage::add('/thanks', $pkg);
+        }
+
         if(!Job::getByHandle('check_logs')){
           Job::installByPackage('check_logs', $pkg);
         }
 
-        if(!Job::getByHandle('insert_services')){
-          Job::installByPackage('insert_services', $pkg);
-        }
-
         if(!Job::getByHandle('sendmail_agreements')){
           Job::installByPackage('sendmail_agreements', $pkg);
+        }
+
+        if(!Job::getByHandle('insert_services')){
+          Job::installByPackage('insert_services', $pkg);
         }
     }
 

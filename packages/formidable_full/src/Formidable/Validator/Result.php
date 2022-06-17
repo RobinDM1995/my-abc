@@ -121,6 +121,7 @@ class Result extends Formidable {
 	public function setData($data) {
 		$this->data = $data;
 	}
+	
 	public function getData($key = '') {
 		if ($key == null) return $this->data;
 		return is_array($this->data) && array_key_exists($key, $this->data)?$this->data[$key]:'';

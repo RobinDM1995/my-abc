@@ -21,11 +21,9 @@
     }
 
     public function run(){
-      //test (disable foreach!)
-      // $recipients['to'] = 'rdm@abcparts.be';
-      // // $recipients['cc'] = '';
-      // $recipients['lang'] = 'fr';
-      //
+      // $recipients['to'] = 'margaux.van.noten@waak.be'; //test
+      // $recipients['cc'] = 'onderhoud@vdlbelgium.com';
+      // $recipients['lang'] = 'nl';
       // $this->sendMail($recipients);
       $customers = $this->getAllCustomers();
 
@@ -40,7 +38,7 @@
 	    $pkgpath = $pkg->getPackagePath();
 	    include_once($pkgpath . '/libraries/spout/src/Spout/Autoloader/autoload.php');
 
-      $inputfilename = '/var/web/vd16778/public_html/application/files/excel/fs_contactpersons2.xlsx';
+      $inputfilename = '/var/web/vd16778/public_html/application/files/excel/fs_contactpersons.xlsx';
 
       $reader = ReaderFactory::createFromType(Type::XLSX);
 			$reader->open($inputfilename);
@@ -64,10 +62,9 @@
         }
       }
 
-      //send te myself after all mails have been send as extra check
-      // $customers['ABC'][0]['contactName'] = 'Robin De Meerleer';
-      // $customers['ABC'][0]['contactEmail'] = 'rdm@abcparts.be';
-      // $customers['ABC'][0]['language'] = 'Nederlands';
+      $customers['ABC'][0]['contactName'] = 'Robin De Meerleer';
+      $customers['ABC'][0]['contactEmail'] = 'rdm@abcparts.be';
+      $customers['ABC'][0]['language'] = 'Nederlands';
 
       return $customers;
     }
@@ -91,7 +88,6 @@
         }
 
       }
-
       return $data;
     }
 
@@ -114,7 +110,6 @@
     }
 
     public function getMailBody($lang){
-      $this->setLang($lang);
       $bodyHeader = '
       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml">
@@ -273,16 +268,6 @@
         </body>
         </html>';
 
-        // $body = $this->getBodyContent($lang);
-        $body = $this->getReminderContent($lang);
-
-      $fullBody = $bodyHeader . $body . $bodyFooter;
-
-      return $fullBody;
-    }
-
-    public function getBodyContent($lang){
-
       $body = '<p>' .t('Beste, '). '</p>';
       $body .= '<p>' .t('Naar aanleiding van onze samenwerking in 2021, ontvangt u deze e-mail.'). '</p>';
       $body .= '<p>' .t('In 2021 heeft u een beroep gedaan op ABC Industrial Parts bv voor het uitvoeren van een interventie ter plaatse. In 2022 willen we deze aanvragen even efficiënt kunnen behandelen en willen we geen tijd verliezen met het invullen en ondertekenen van de interventieovereenkomst.'). '</p>';
@@ -292,22 +277,9 @@
       $body .= '<p>' .t('Mocht u verdere vragen hebben, aarzel niet om ons te contacteren.'). '</p>';
       $body .= '<p>' .t('Het ABC Team'). '</p>';
 
+      $fullBody = $bodyHeader . $body . $bodyFooter;
 
-      return $body;
-    }
-
-    public function getReminderContent($lang){
-      $body = '<h2 style="color: #74b843;">REMINDER</h2>';
-      $body .= '<p>' . t('Beste, ') . '</p>';
-      $body .= '<p>' . t('Daar we nog geen reactie ontvangen hebben op onze e-mail, vindt u hieronder nogmaals de aangepaste interventievoorwaarden voor 2022.') . '</p>';
-      $body .= '<p>' . t('In 2021 heeft u een beroep gedaan op ABC Industrial Parts bv voor het uitvoeren van een interventie ter plaatse. In 2022 willen we deze aanvragen even efficiënt kunnen behandelen en willen we geen tijd verliezen met het invullen en ondertekenen van de interventieovereenkomst.') . '</p>';
-      $body .= '<p>' . t('Daarom vindt u hieronder de link met de nieuwe jaarovereenkomst waarbij de interventievoorwaarden voor 2022 worden verduidelijkt. Wij vragen u vriendelijk deze overeenkomst in te vullen voor akkoord.');
-      $body .= '<p>https://my.abcparts.be/' . $lang . '/agreementfs </p>';
-      $body .= '<p>' . t('Zonder getekende overeenkomst zullen er geen interventies uitgevoerd worden.') . '</p>';
-      $body .= '<p>' . t('Mocht u verdere vragen hebben, aarzel niet om ons te contacteren.') . '</p>';
-      $body .= '<p>' . t('Het ABC Team') . '</p>';
-
-      return $body;
+      return $fullBody;
     }
 
     public function setLang($lang){

@@ -18,7 +18,9 @@ class insertServices extends Job{
   public function run(){
     $esengoData = $this->getEsengoData(46461); // template id myabc-services api
     $db = Database::connection();
-
+    echo '<pre>';
+    print_r($esengoData);
+    exit;
     foreach($esengoData as $data){
       $result = $db->getRow('SELECT * FROM esengoServices WHERE servicecode = "' .$data['code'] . '"');
       if($result){
