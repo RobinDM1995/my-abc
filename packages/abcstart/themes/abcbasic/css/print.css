@@ -1,0 +1,7 @@
+.row-fluid{
+	display: none;
+}
+
+.container-fluid .main-content{
+	display: block;
+}

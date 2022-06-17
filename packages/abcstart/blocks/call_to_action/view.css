@@ -1,0 +1,91 @@
+/* Custom */
+
+.wrapper .btn-primary-color-1 {
+  background-color: #bd4565;
+  border-color: #bd4565;
+  color: white;
+}
+.wrapper .btn-primary-color-1:hover,
+.wrapper .btn-primary-color-1:focus {
+
+}
+
+.wrapper .btn-primary-color-2 {
+
+}
+.wrapper .btn-primary-color-2:hover,
+.wrapper .btn-primary-color-2:focus {
+
+}
+
+.wrapper .btn-primary-color-3 {
+
+}
+.wrapper .btn-primary-color-3:hover,
+.wrapper .btn-primary-color-3:focus {
+
+}
+
+.wrapper .btn-primary-color-4 {
+
+}
+.wrapper .btn-primary-color-4:hover,
+.wrapper .btn-primary-color-4:focus {
+
+}
+
+/* Settings */
+
+.wrapper .call-to-action {
+  display: block;
+  width: 100%;
+}
+
+.wrapper .cta-left {
+  text-align: left;
+}
+
+.wrapper .cta-centered {
+  text-align: center;
+}
+
+.wrapper .cta-right {
+  text-align: right;
+}
+
+.wrapper .btn-primary-color {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #ccc;
+  padding: 12px 24px;
+  transition: 0.3s;
+}
+
+.wrapper .btn-primary-color.btn-icon-left .call-to-action-text {
+  padding-left: 25px;
+}
+
+.wrapper .btn-primary-color.btn-icon-right .call-to-action-text {
+  padding-right: 25px;
+}
+
+.wrapper .btn-primary-color p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .btn-primary-color i.left {
+  float: left;
+}
+
+.wrapper .btn-primary-color i.right {
+  float: right;
+}

@@ -1,0 +1,69 @@
+Version 1.2.1
+==================================================
+- Fix saving issue on firefox
+
+Version 1.2.0
+==================================================
+- Add support for external storage locations like AWS2
+
+Version 1.1.0
+==================================================
+- Change app icon
+
+Version 1.0.6
+==================================================
+- Add new marketing elements
+
+Version 1.0.5
+==================================================
+- Fix image ratio (Thanks Dario Bösch)
+- Hide concrete panel on pdf edit mode (Thanks Dario Bösch)
+
+Version 1.0.4
+==================================================
+- Fix MySQL strict error
+
+Version 1.0.3
+==================================================
+- Add support for deviant storage locations
+
+Version 1.0.2
+==================================================
+- Change app-icon
+
+Version 1.0.0.5
+==================================================
+- Fix UTF8 problems
+
+Version 1.0.0.4
+==================================================
+- Add post setup popup
+
+Version 1.0.0.3
+==================================================
+- UTF8 Fix
+
+Version 1.0.0.2
+==================================================
+- Fix size property in QR code generation
+
+Version 1.0.0.1
+==================================================
+- Fix issue in concrte5 version 8.3.1 (special thanks to Dario Bösch)
+
+Version 1.0.0.0
+==================================================
+- Add special offer notice
+
+Version 0.9.6.2
+==================================================
+- Support for more external images file types (JPG + PNG + GIF)
+
+Version 0.9.6.1
+==================================================
+- New Box Type for QR Codes
+- Possibility to add external Images to the Image Block
+
+Version 0.9.5.8
+==================================================
+- First release

@@ -1,0 +1,89 @@
+/* #progressbar {
+    margin-top: 15px;
+    /* margin-bottom: 30px; 
+    overflow: hidden;
+    color: grey;
+}
+
+#progressbar .active {
+    color: #bd4565;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative
+}
+#progressbar li p{
+  text-align: center;
+}
+#progressbar #contact:before {
+    font-family: FontAwesome;
+    content: "\f007";
+    margin: 0 auto 5px;
+}
+
+#progressbar #company:before {
+    font-family: FontAwesome;
+    content: "\f1ad";
+    margin:0 auto 5px;
+}
+
+#progressbar #item:before {
+    font-family: FontAwesome;
+    content: "\f187";
+    margin:0 auto 5px;
+}
+
+#progressbar #overview:before {
+    font-family: FontAwesome;
+    content: "\f03a";
+    margin:0 auto 5px;
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: #8bb23b;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    text-align: center;
+}
+#progressbar li #contact{
+  align-items: center;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li:before,
+#progressbar li:after{
+  background: grey;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #bd4565;
+}
+.progress {
+    height: 20px
+}
+
+ .progress-bar {
+    background-color: #bd4565;
+} */

@@ -1,0 +1,210 @@
+2.1.5
+Fixed "preg_quote" error on submitting
+
+2.1.4
+Added alt-tag to "Button"-element
+Fixed values options in "Integer"-element
+Fixed adding attributes to email
+Fixed sending mail "not matching" values
+
+2.1.3
+Fixed hide label on "Code"-element
+Fixed sorting in options
+Added IBAN-element (with check)
+Changed dialog help text
+Fixed default country selection on "Address"-element
+Added folder-selection to "Upload"-element
+Fixed dependencies (OR) in mailings
+
+2.1.2
+Fixed not deleting options on select
+Fixed unserialize (array) error in block
+Changed default class on button to btn-primary
+
+2.1.1
+Added handle to form
+
+2.1
+Fixed CSS in templates
+Fix jQuery Easing error
+Fix jQuery height() error
+Fixed loader image error in template
+Added custom error message to Captcha-element
+
+2.0.9
+Settings in "Formidable"-block
+Better loading jQuery
+Fixed validation error message on min/max values
+Fixed javascript errors on showing error messages
+Fixed validation of Address- and Fullname-element
+Fixed discard empty is checked, layout elements are ignored
+Added ability to get Pages and Users in Radio-, Checkbox- and Select-elements
+Added ability to duplicate rows and columns with the elements
+Added labels for mailings
+Fixed double error messages in preview
+
+2.0.8
+Export results into CSV and XLS (dirty)
+Fixed preview loading after submission
+Fixed typo when no results found
+
+2.0.7
+Fixed scrolling back to top with dependencies
+Fixed redirect issue (thank you afixia)
+Added default options to Select-element
+Added ability to remove complete row including the elements
+Fixed columns problems for Radio- and Checkbox-elements
+Changed some css in view.css and css-files in templates
+
+2.0.6
+Fixed some jquery issues for resizing steps
+Fixed number of results on results-page (only >= 8.4)
+Fixed "please wait" message on editing form with files
+
+2.0.5
+Fixed return to "any value" issue with dependencies
+Fixed placeholder in Select-element (thanks Patej)
+Fixed dependency on Date-element
+Added translation strings in Upload-element
+
+2.0.4
+Added custom selected countries in Address-element
+Added default selected country in Address-element
+Added geocode finder within Address-element
+Added min-max year option to Date-element
+Fixed minor javascript bug
+Fixed dynamic height of step, based on active dependencies
+Fixed firing wrong event on successfull submission
+Fixed "contains" dependency in mailing
+Fixed return to "any value" issue with dependencies
+Fixed weird buttons while adding dependencies
+
+2.0.3
+Fixed dependencies (sorry! Made a booboo with commented code)
+Fixed ability dragging elements after moving layout
+Added "Signature"-element
+
+2.0.2
+Fixed removing loading image on wrong submission
+Fixed javascript error when using counting
+Fixed "Allowed Memory Size" when using dependencies
+Fixed error on deleting "step"
+
+2.0.1
+Fixed error on adding dependency rule
+Fixed error on loading images
+Fixed error on saving new form with errors
+Fixed submission error in Firefox when previewing form
+Fixed minor javascript issue for buttons
+Form hidden in formlist when edit permissions set
+Added permissions for adding forms (via /application/config/)
+
+2.0
+Added multi-step (or multi-page) option
+Added permissions on results
+Added event examples in /controller.php (line: 336)
+Fixed submitting twice
+Fixed lost dependencies on duplication of form
+Fixed empty form name in mail
+Removed duplicate code
+Moved some javascript for better customization
+
+1.1.7
+Delete all results at once
+Matching values in dependency never in mail
+Sorting issue on duplication
+Change "Object" to "ConcreteObject" for PHP7
+Fixed dependency on button-element
+Fixes for PHP7
+
+1.1.6
+Removed masking of REQUEST variable
+Fixed default value from REQUEST
+Fixed uploader issue in 8.4.2 (declaration error in Fileimporter)
+Changed the default view and template views (captcha issue)
+Fixed wrong order in Address-element
+
+1.1.5
+Fixed Validator issue after upgrading to 8.4.2
+
+1.1.4
+Fixed Results Error in 8.4.1
+Fixed error on Reply-To setting in mail
+Fixed issue with error on empty variable
+Fixed dependency on layout elements
+
+1.1.3
+Fixed some styling issues
+Uploading progress blocks submit-button
+Fixed dependencies not working with multiple forms. (thank you Marc)
+
+1.1.2
+Fixed dependency issues (new javascript)
+GDPR fix (thank you, fridayphoto)
+Fixed minor bugs
+
+1.1.1
+Replaced masking plugin (masked fields needs updating!)
+Fixed word count on textarea
+Added GDPR Compliance
+Added GDPR Agree element
+
+1.1.0
+Fix for 8.2.3
+
+1.0.11
+Added custom classes to elements
+
+1.0.10
+Fixed /User class not found
+New method for platform and browser data
+Fixed not saving CC or BCC in mail settings
+Fixed stateselector when there is no country
+
+1.0.9
+Fixed error on adding mailing (thanks Graham)
+
+1.0.8
+Fixed uploading issue (undefined)
+Changed Dutch language
+
+1.0.7
+Fixed "operator error" for checkbox and radio
+Fixed coding error in Textarea element
+Fixed unclosed div in results-page
+Add placeholder to Date Element
+
+1.0.6
+Validation on URL and E-mailaddress changed
+
+1.0.5
+Fixed single quote issue in mailing (thanks olacom)
+Fixed error on validation on checkbox and radio
+Fixed fullname not showing in form
+Fixed not showing chars-counter in form
+
+1.0.4
+Fixed redirect error after submission
+Fixed empty page and user fields
+Added page and user attributes to mailing
+Fixed error abstact error SearchProvider on 8.2.1
+
+1.0.3
+Fixed error on other formats in Date Element
+Fixed minor dependency issue
+Fixed for 8.2 (IPservice)
+
+1.0.2
+Added sorting options for select, checkbox and radio
+Added adding in bulk for select, checkbox and radio
+Fixed typo (succesfully)
+
+1.0.1
+Fixed issues PRB
+Added a default-view for non-bootstrap users
+Added custom errors for elements
+Added templates for mailings
+Added ability to change format for checkboxes and radios
+
+1.0
+Initial version

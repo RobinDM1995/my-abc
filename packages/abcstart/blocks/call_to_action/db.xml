@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="btCallToAction">
+        <field name="bID" type="I">
+            <key ></key>
+            <unsigned ></unsigned>
+        </field>
+        <field name="linktype" type="I"></field>
+        <field name="internallink" type="I"></field>
+        <field name="linkurl" type="X"></field>
+        <field name="name" type="X"></field>
+        <field name="class" type="C" size="255"></field>
+        <field name="align" type="C" size="255"></field>
+        <field name="icon" type="C" size="255"></field>
+        <field name="iconlocation" type="I"></field>
+    </table>
+</schema>

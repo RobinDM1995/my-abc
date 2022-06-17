@@ -1,0 +1,541 @@
+# German translations for PACKAGE package
+# German translation for PACKAGE.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Fabian Bitter <fabianbitter@fabians-macbook-air-2.local>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-26 18:56+0200\n"
+"PO-Revision-Date: 2017-04-02 13:01+0200\n"
+"Last-Translator: Fabian Bitter <fabianbitter@fabians-macbook-air-2.local>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "Thank You for purchasing my Software!"
+msgstr "Vielen Dank für den Erwerb meiner Software!"
+
+msgid "Follow me on Twitter and Facebook to get the latest news and notifications about updates, new add-ons/themes and special offers."
+msgstr "Folgen Sie mir auf Twitter und Facebook um Neuigkeiten zu erhalten über Updates, neue Add-ons/Themes und Sonderangebote."
+
+#: controller.php:27
+msgid "Design PDF files with the ease of use that you are accustomed from concrete5."
+msgstr "Gestalten Sie PDF Dateien mit der Einfachheit die Sie von concrete5 gewöhnt sind."
+
+#: controller.php:31 controller.php:120
+msgid "PDF Designer"
+msgstr "PDF Designer"
+
+#: controller.php:47 views/dialogs/box_editors/image.php:21
+#: views/dialogs/box_editors/image.php:26
+msgid "Image"
+msgstr "Bild"
+
+#: controller.php:48
+msgid "Text Area"
+msgstr "Freitext"
+
+#: controllers/dialog/change_box_type.php:51
+#: controllers/dialog/change_position.php:56 controllers/dialog/edit_box.php:49
+msgid "Box updated successfully."
+msgstr "Box erfolgreich aktualisiert."
+
+#: controllers/single_page/dashboard/pdf_designer.php:108
+#, php-format
+msgid "PDF Designer - Edit Template - %s"
+msgstr "PDF Designer - Bearbeite Template - %s"
+
+#: single_pages/dashboard/pdf_designer/edit.php:11
+#: views/dialogs/box_editors/image.php:13
+#: views/dialogs/box_editors/text_area.php:13
+#: views/dialogs/change_box_type.php:13 views/dialogs/change_position.php:13
+msgid "For support requests please contact fabian@bitter.de."
+msgstr "Für Support-Anfragen kontaktieren Sie bitte fabian@bitter.de."
+
+#: single_pages/dashboard/pdf_designer/edit.php:16
+#: single_pages/dashboard/pdf_designer/overview.php:55
+msgid "Preview"
+msgstr "Vorschau"
+
+#: single_pages/dashboard/pdf_designer/edit.php:20
+msgid "Template Options"
+msgstr "Template Optionen"
+
+#: single_pages/dashboard/pdf_designer/edit.php:27
+msgid "Back to Overview"
+msgstr "Zurück zur Übersicht"
+
+#: single_pages/dashboard/pdf_designer/edit.php:38
+#: single_pages/dashboard/pdf_designer/edit.php:378
+msgid "Template Settings"
+msgstr "Template Einstellungen"
+
+#: single_pages/dashboard/pdf_designer/edit.php:44
+#: single_pages/dashboard/pdf_designer/edit.php:99
+msgid "General"
+msgstr "Allgemein"
+
+#: single_pages/dashboard/pdf_designer/edit.php:50
+#: single_pages/dashboard/pdf_designer/edit.php:152
+#: single_pages/dashboard/pdf_designer/edit.php:157
+msgid "Paper Size"
+msgstr "Papiertyp"
+
+#: single_pages/dashboard/pdf_designer/edit.php:56
+#: single_pages/dashboard/pdf_designer/edit.php:188
+msgid "Margins"
+msgstr "Seitenränder"
+
+#: single_pages/dashboard/pdf_designer/edit.php:62
+#: single_pages/dashboard/pdf_designer/edit.php:256
+msgid "Letterhead"
+msgstr "Briefpapier"
+
+#: single_pages/dashboard/pdf_designer/edit.php:68
+#: single_pages/dashboard/pdf_designer/edit.php:287
+msgid "Embed"
+msgstr "Einbinden"
+
+#: single_pages/dashboard/pdf_designer/edit.php:83
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: single_pages/dashboard/pdf_designer/edit.php:87
+#: views/dialogs/box_editors/image.php:48
+#: views/dialogs/box_editors/text_area.php:95
+#: views/dialogs/change_box_type.php:47 views/dialogs/change_position.php:63
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: single_pages/dashboard/pdf_designer/edit.php:105
+msgid "Template name"
+msgstr "Template Name"
+
+#: single_pages/dashboard/pdf_designer/edit.php:112
+msgid "Required"
+msgstr "Pflichtfeld"
+
+#: single_pages/dashboard/pdf_designer/edit.php:119
+msgid "Grid"
+msgstr "Raster"
+
+#: single_pages/dashboard/pdf_designer/edit.php:124
+#: single_pages/dashboard/pdf_designer/edit.php:174
+msgid "Yes"
+msgstr "Ja"
+
+#: single_pages/dashboard/pdf_designer/edit.php:125
+#: single_pages/dashboard/pdf_designer/edit.php:175
+msgid "No"
+msgstr "Nein"
+
+#: single_pages/dashboard/pdf_designer/edit.php:132
+msgid "Grid Size"
+msgstr "Raster Größe"
+
+#: single_pages/dashboard/pdf_designer/edit.php:139
+#: single_pages/dashboard/pdf_designer/edit.php:201
+#: single_pages/dashboard/pdf_designer/edit.php:215
+#: single_pages/dashboard/pdf_designer/edit.php:229
+#: single_pages/dashboard/pdf_designer/edit.php:243
+msgid "Dimension in mm"
+msgstr "Maßangabe in mm"
+
+msgid "Dimension in inch"
+msgstr "Maßangabe in inch"
+
+#: single_pages/dashboard/pdf_designer/edit.php:169
+msgid "Portrait Mode"
+msgstr "Hochformat"
+
+#: single_pages/dashboard/pdf_designer/edit.php:194
+#: views/dialogs/change_position.php:30
+msgid "Top"
+msgstr "Oben"
+
+#: single_pages/dashboard/pdf_designer/edit.php:208
+msgid "Bottom"
+msgstr "Unten"
+
+#: single_pages/dashboard/pdf_designer/edit.php:222
+#: views/dialogs/change_position.php:38
+msgid "Left"
+msgstr "Links"
+
+#: single_pages/dashboard/pdf_designer/edit.php:236
+msgid "Right"
+msgstr "Rechts"
+
+#: single_pages/dashboard/pdf_designer/edit.php:261
+msgid "First Page"
+msgstr "Erste Seite"
+
+#: single_pages/dashboard/pdf_designer/edit.php:271
+msgid "Following Page"
+msgstr "Folgeseite"
+
+#: single_pages/dashboard/pdf_designer/edit.php:291
+msgid "Simple Usage"
+msgstr "Einfache Verwendung"
+
+#: single_pages/dashboard/pdf_designer/edit.php:295
+msgid "The following lines of code will output the current template as a PDF:"
+msgstr "Die folgenden Codezeilen geben das PDF Template aus."
+
+#: single_pages/dashboard/pdf_designer/edit.php:308
+msgid "Working with Placeholders"
+msgstr "Mit Platzhaltern arbeiten"
+
+#: single_pages/dashboard/pdf_designer/edit.php:312
+msgid "The following sample code explains you, how to fill the template with dynamic content."
+msgstr "Die folgenden Codezeilen zeigen, wie man dynamische Inhalte einfügt."
+
+#: single_pages/dashboard/pdf_designer/edit.php:316
+msgid "Paste following code snippet into your sourcecode:"
+msgstr "Fügen Sie den folgenden Codeschnipsel in Ihren Quellcode ein:"
+
+#: single_pages/dashboard/pdf_designer/edit.php:339
+msgid "Click on Edit Content of a box and paste the following placeholders into the content area."
+msgstr "Klicken Sie in einer Box Ihrer Wahl auf Inhalt bearbeiten und fügen Sie die folgenden Platzhalter in den Inhaltsbereich."
+
+#: single_pages/dashboard/pdf_designer/edit.php:370
+#: single_pages/dashboard/pdf_designer/overview.php:59
+msgid "Delete"
+msgstr "Löschen"
+
+#: single_pages/dashboard/pdf_designer/edit.php:371
+#: single_pages/dashboard/pdf_designer/edit.php:375
+msgid "Edit Content"
+msgstr "Inhalt bearbeiten"
+
+#: single_pages/dashboard/pdf_designer/edit.php:372
+msgid "Close"
+msgstr "Schließen"
+
+#: single_pages/dashboard/pdf_designer/edit.php:373
+#: views/dialogs/change_box_type.php:21 views/dialogs/change_box_type.php:26
+msgid "Box Type"
+msgstr "Boxtyp"
+
+#: single_pages/dashboard/pdf_designer/edit.php:374
+#: views/dialogs/change_position.php:25
+msgid "Position"
+msgstr "Position"
+
+#: single_pages/dashboard/pdf_designer/edit.php:376
+msgid "Change Box Type"
+msgstr "Boxentyp ändern"
+
+#: single_pages/dashboard/pdf_designer/edit.php:377
+msgid "Change Position"
+msgstr "Position ändern"
+
+#: single_pages/dashboard/pdf_designer/edit.php:379
+msgid "There was an error while saving."
+msgstr "Es trat ein Fehler beim speichern auf."
+
+#: single_pages/dashboard/pdf_designer/edit.php:380
+msgid "PDF Designer - Edit Template - {0}"
+msgstr "PDF Designer - Bearbeite Template - {0}"
+
+#: single_pages/dashboard/pdf_designer/edit.php:381
+#: views/dialogs/box_editors/image.php:40
+msgid "Choose File"
+msgstr "Datei auswählen"
+
+#: single_pages/dashboard/pdf_designer/overview.php:14
+msgid "Add Template"
+msgstr "Template hinzufügen"
+
+#: single_pages/dashboard/pdf_designer/overview.php:20
+#, php-format
+msgid "You don't have created any templates. Click <a href=\"%s\">here</a> to create one."
+msgstr "Sie haben noch keine Templates erstellt. Klicken Sie <a href=\"%s\">hier</a> um eins zu erstellen."
+
+#: single_pages/dashboard/pdf_designer/overview.php:28
+msgid "Template Name"
+msgstr "Template Name"
+
+#: single_pages/dashboard/pdf_designer/overview.php:51
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: single_pages/dashboard/pdf_designer/overview.php:58
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: src/Entity/Template.php:230
+msgid "A0"
+msgstr ""
+
+#: src/Entity/Template.php:231
+msgid "A1"
+msgstr ""
+
+#: src/Entity/Template.php:232
+msgid "A2"
+msgstr ""
+
+#: src/Entity/Template.php:233
+msgid "A3"
+msgstr ""
+
+#: src/Entity/Template.php:234
+msgid "A4"
+msgstr ""
+
+#: src/Entity/Template.php:235
+msgid "A5"
+msgstr ""
+
+#: src/Entity/Template.php:236
+msgid "A6"
+msgstr ""
+
+#: src/Entity/Template.php:237
+msgid "A7"
+msgstr ""
+
+#: src/Entity/Template.php:238
+msgid "A8"
+msgstr ""
+
+#: src/Entity/Template.php:239
+msgid "A9"
+msgstr ""
+
+#: src/Entity/Template.php:240
+msgid "A10"
+msgstr ""
+
+#: src/Entity/Template.php:243
+msgid "Extra"
+msgstr ""
+
+#: src/Entity/Template.php:244
+msgid "Tabloid (Ledger)"
+msgstr ""
+
+#: src/Entity/Template.php:245
+msgid "Legal"
+msgstr ""
+
+#: src/Entity/Template.php:246
+msgid "Legal 13 \""
+msgstr ""
+
+#: src/Entity/Template.php:247
+msgid "Letter (US Standard Letter)"
+msgstr ""
+
+#: src/Entity/Template.php:248
+msgid "Executive"
+msgstr ""
+
+#: src/Entity/Template.php:249
+msgid "Statement (half letter)"
+msgstr ""
+
+#: src/Entity/Template.php:250
+msgid "Commercial #10"
+msgstr ""
+
+#: src/Entity/Template.php:251
+msgid "Monarch"
+msgstr ""
+
+#: src/Entity/Template.php:252
+msgid "5 x 7 Card"
+msgstr ""
+
+#: src/Entity/Template.php:253
+msgid "4 x 6 Card"
+msgstr ""
+
+#: src/PDFDesigner.php:206
+#, php-format
+msgid "New Document %s"
+msgstr "Neues Dokument %s"
+
+#: views/dialogs/box_editors/image.php:52
+#: views/dialogs/box_editors/text_area.php:99
+#: views/dialogs/change_box_type.php:51 views/dialogs/change_position.php:67
+msgid "Save"
+msgstr "Speichern"
+
+#: views/dialogs/box_editors/text_area.php:21
+msgid "Font Settings"
+msgstr "Schrift Einstellungen"
+
+#: views/dialogs/box_editors/text_area.php:26
+msgid "Font name"
+msgstr "Schriftart"
+
+#: views/dialogs/box_editors/text_area.php:47
+msgid "Font Size"
+msgstr "Schriftgröße"
+
+#: views/dialogs/box_editors/text_area.php:69
+#: views/dialogs/box_editors/text_area.php:74
+msgid "Content"
+msgstr "Inhalt"
+
+#: views/dialogs/change_position.php:20
+msgid "All dimensions in mm."
+msgstr "Alle Maßangaben in mm."
+
+msgid "All dimensions in inch."
+msgstr "Alle Maßangaben in inch."
+
+#: views/dialogs/change_position.php:46
+msgid "Width"
+msgstr "Breite"
+
+#: views/dialogs/change_position.php:54
+msgid "Height"
+msgstr "Höhe"
+
+msgid "Dimension type"
+msgstr "Maßangaben"
+
+msgid "Custom Fonts"
+msgstr "Eigene Schriften"
+
+msgid "Add Font"
+msgstr "Schrift hinzufügen"
+
+msgid "Remove Font"
+msgstr "Schrift entfernen"
+
+msgid "Here you can manage your Custom Fonts. You have to allow the file extensions TTF, OTF and PFB first in your concrete5 settings to enable this feature. Please go to <a href=\"%s\" target=\"_blank\">Sytem &amp; Settings > Files > Allowed File Types</a>."
+msgstr "Hier können Sie Ihre eigenen Schriften verwalten. Um dieses Feature nutzen zu können, müssen Sie die Dateiendungen TTF, OTF and PFB in Ihren concrete5-Einstellungen hinzufügen. Bitte gehen Sie dafür auf <a href=\"%s\" target=\"_blank\">Sytem &amp; Einstellungen > Dateien > Erlaubte Dateitypen</a>."
+
+msgid "Font Color"
+msgstr "Schriftfarbe"
+
+msgid "Border Color"
+msgstr "Rahmenfarbe"
+
+msgid "Data Source"
+msgstr "Datenquelle"
+
+msgid "Working with Tables"
+msgstr "Mit Tabellen arbeiten"
+
+msgid "The following sample code explains you, how to fill a Table Box with dynamic content."
+msgstr "Die folgenden Codezeilen zeigen, wie man Tabellen mit dynamischen Inhalten füllt."
+
+msgid "Click on Edit Content of a Table Box and set the Data Source to <strong>{myTable}</strong>."
+msgstr "Klicke bei einer Tabellen Box auf Inhalt Bearbeiten und setze die Datenquelle auf <strong>{myTable}</strong>"
+
+msgid "Table"
+msgstr "Tabelle"
+
+msgid "Sample Placeholders"
+msgstr "Beispiel Platzhalter"
+
+msgid "Create sample placeholders here to test the PDF generation."
+msgstr "Legen Sie hier testweise Platzhalter an um die PDF-Generierung testen zu können."
+
+msgid "Do you want to install some Sample Data?"
+msgstr "Möchten Sie Beispielinhalte mitinstallieren?"
+
+msgid "Install Sample Data"
+msgstr "Installiere Beispielinhalte"
+
+msgid "Import Templates"
+msgstr "Templates importieren"
+
+msgid "Drag the template here or click to import."
+msgstr "Ziehen Sie das Template mit der Maus hierher oder klicken Sie."
+
+msgid "Export"
+msgstr "Exportieren"
+
+msgid "Page Orientation"
+msgstr "Seitenausrichtung"
+
+msgid "Portrait"
+msgstr "Hochformat"
+
+msgid "Landscape"
+msgstr "Querformat"
+
+msgid "Do you want to remove all Templates?"
+msgstr "Möchten Sie alle Templates löschen?"
+
+msgid "Remove all Templates"
+msgstr "Entferne alle Templates"
+
+msgid "Duplicate"
+msgstr "Duplizieren"
+
+msgid "%s (Duplicate)"
+msgstr "%s (Duplikat)"
+
+msgid "Color model"
+msgstr "Farbmodell"
+
+msgid "RGB"
+msgstr "RGB"
+
+msgid "CMYK"
+msgstr "CMYK"
+
+msgid "Import Font from Google"
+msgstr "Importiere Schriftart aus Google"
+
+msgid "Install Font"
+msgstr "Installiere Schriftart"
+
+msgid "The font was successfully installed."
+msgstr "Die Schriftart wurde erfolgreich installiert."
+
+msgid "Absolute"
+msgstr "Absolut"
+
+msgid "Relative"
+msgstr "Relativ"
+
+msgid "Search Fonts..."
+msgstr "Suche Schriften..."
+
+msgid "Add Box"
+msgstr "Box hinzufügen"
+
+msgid "Box Types"
+msgstr "Boxtypen"
+
+msgid "Box added successfully."
+msgstr "Box erfolgreich hinzugefügt."
+
+msgid "(Please select)"
+msgstr "(Bitte wählen)"
+
+msgid "You can enter a URL or use a {placeholder}."
+msgstr "Sie können eine URL eingeben oder einen {Platzhalter}."
+
+msgid "Image URL"
+msgstr "Bild-URL"
+
+msgid "Leave this field blank to use an external URL."
+msgstr "Lassen Sie das Feld leer um eine externe URL zu verwenden."
+
+msgid "Internal Image"
+msgstr "Internes Bild"
+
+msgid "External Image"
+msgstr "Externes Bild"
+
+msgid "Image File Type"
+msgstr "Dateityp des Bildes"
+
+msgid "Rate this add-on on concrete5.org and as a thank-you gift can choose another add-on of mine up to $35. This offer may only be claimed once. Click <a href=\"%s\" class=\"alert-link\"> here </a> to rate now."
+msgstr "Bewerten Sie diese Erweiterung auf concrete5.org und als Dankeschön dürfen Sie sich eine weitere Erweiterungen von mir im Wert von $35 raussuchen. Dieses Angebot darf nur einmal beansprucht werden. Klicken Sie <a href=\"%s\" class=\"alert-link\">hier</a> um jetzt eine Bewertung abzugeben."

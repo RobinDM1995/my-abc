@@ -1,0 +1,76 @@
+.pdfDesignerTemplate {
+    position: relative;
+    display: block;
+    float: left;
+    background: #979b9c;
+}
+
+.pdfDesignerBox {
+    position: absolute !important;
+    background: white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: solid 1px #fff !important;
+}
+
+.pdfDesignerBox:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 14px !important;
+    content: "\f047";
+    font-weight: lighter;
+    color: #666 !important;
+    cursor: move;
+}
+
+.pdfDesignerBox canvas {
+    position: absolute;
+}
+
+.pdfDesignerBox:hover {
+    outline: solid 1px #afa !important;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pdfDesignerBox.active {
+    background-color: rgba(89, 236, 89, 0.4);
+}
+
+#ccm-panel-detail-page {
+    background-color: #f3fbff;
+}
+
+#ccm-panel-detail-page div.ccm-panel-detail-content {
+    margin-left: 320px;
+    background-color: #f3fbff;
+}
+
+#ccm-panel-detail-page .ccm-panel-detail-content-form{
+    width: 100% !important;
+}
+
+#ccm-panel-detail-page header {
+    background-color: #e1f4ff;
+    color: #105192;
+}
+
+#ccm-panel-detail-page hr {
+    border-bottom-color: #c6d3db;
+}
+
+#ccm-panel-detail-page .help-block {
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+
+#ccm-panel-detail-page .form-group >div {
+    position: relative;
+}
+
+#jsonEditor {
+    margin: 0;
+    padding: 0;
+}

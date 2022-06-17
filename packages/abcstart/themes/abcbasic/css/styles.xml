@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+	<set name="Basic Colors Settings">
+		<style name="Primary color" variable="primary-color1" type="color" />
+		<style name="Secondary color" variable="primary-color2" type="color" />
+		<style name="Tertiary color" variable="primary-color3" type="color" />
+    <style name="Quaternary color" variable="primary-color4" type="color" />
+	</set>
+	<set name="Basic Page Settings">
+		<style name="Page Background" variable="page-background" type="color" />
+		<style name="Page Main Background" variable="page-main-background" type="color" />
+		<style name="Page Content Background" variable="page-content-background" type="color" />
+    <style name="Page Break Content Background" variable="page-break-content-background" type="color" />
+		<style name="Page HR Color" variable="page-content-hr" type="color" />
+		<style name="Page Border Color" variable="page-border" type="color" />
+		<style name="Text" variable="body" type="type" />
+		<style name="Page Title" variable="page-title" type="type" />
+		<style name="Link Hover" variable="body-link-hover" type="color" />
+		<style name="Link Active" variable="body-link-active" type="color" />
+	</set>
+	<set name="Headings">
+		<style name="Heading 1" variable="h1" type="type" />
+		<style name="Heading 2" variable="h2" type="type" />
+		<style name="Heading 3" variable="h3" type="type" />
+		<style name="Heading 4" variable="h4" type="type" />
+		<style name="Heading 5" variable="h5" type="type" />
+		<style name="Heading 6" variable="h6" type="type" />
+		<style name="Heading Color" variable="headings" type="color" />
+	</set>
+	<set name="Header">
+		<style name="Header Background" variable="header-background" type="color" />
+		<style name="Header Text Color" variable="header-text" type="color" />
+		<style name="Header Line Color" variable="header-line" type="color" />
+		<style name="Header Background Hover Color" variable="header-background-hover" type="color" />
+	</set>
+	<set name="Footer">
+		<style name="Footer Background" variable="footer-background" type="color" />
+		<style name="Footer Text Color" variable="footer-text" type="color" />
+		<style name="Footer Line Color" variable="footer-line" type="color" />
+		<style name="Footer Background Hover Color" variable="footer-background-hover" type="color" />
+		<style name="Social Button Background Color" variable="social-button-background" type="color" />
+		<style name="Social Button Background Hover" variable="social-button-background-hover" type="color" />
+		<style name="Social Button Icon Color" variable="social-button-icon" type="color" />
+		<style name="Social Button Icon Color Hover" variable="social-button-icon-hover" type="color" />
+	</set>
+</styles>
